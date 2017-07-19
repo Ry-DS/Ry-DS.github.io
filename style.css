@@ -22,20 +22,20 @@ body, html {
 
 /* Second image (Portfolio) */
 .bgimg-2 {
-    background-image: url("/images/parallax2.jpg");
+    background-image: url("https://images.alphacoders.com/176/176123.jpg");
     min-height: 400px;
 }
 
 /* Third image (Contact) */
 .bgimg-3 {
-    background-image: url("/images/parallax3.jpg");
+    background-image: url("http://cdn.wallpapersafari.com/4/35/N74oKL.jpg");
     min-height: 400px;
 }
 .name {
     color: Crimson;
 }
 .color-bar{
-    color: WhiteSmoke;
+    color: Gray;
 }
 
 .w3-wide {letter-spacing: 10px;}
