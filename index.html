@@ -1,16 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+	<!--Icon stuff-->
+	
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="theme-color" content="#ffffff">
+
+
+
 	<meta charset="utf-8">
-	<title>SimplyBallistic</title>
+	<title>Ryan Samarakoon</title>
 	<script src="https://www.google.com/jsapi" type="text/javascript"></script>
  
 	<script
   src="https://code.jquery.com/jquery-3.2.1.js"
   integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
   crossorigin="anonymous"></script>
-  <script type="text/javascript" src="text-rotator.js"></script>
-  <link rel="stylesheet" type="text/css" href="textrotator.css" />
+  <script type="text/javascript" src="text-rotator/text-rotator.js"></script>
+  <link rel="stylesheet" type="text/css" href="text-rotator/textrotator.css" />
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
@@ -18,9 +30,7 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<!--Github link api-->
-	<link rel="stylesheet" href="http://github-profile.com/dist/gh-profile-card.min.css" />
-	<script type="text/javascript" src="http://github-profile.com/dist/gh-profile-card.min.js"></script>
+	
 
 	
 
@@ -46,7 +56,43 @@ $(document).ready(function(){
         animation: "spin",
         speed: 2000
       });
+      // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+
+
+
+
+
+
+
+
+
 		});
+
+
+
+
+
 	</script>
 
 </head>
@@ -56,7 +102,7 @@ $(document).ready(function(){
     <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
-    <!-- <a href="#home" class="w3-bar-item w3-button">HOME</a> -->
+    <a href="#home" class="w3-bar-item w3-button w3-hover-red">HOME</a>
     <a href="#about" class="w3-bar-item w3-button w3-hide-small"> <span class="color-bar"><i class="fa fa-user"></i> ABOUT</span></a>
     <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"> <span class="color-bar"><i class="fa fa-th"></i> PORTFOLIO</span></a>
     <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><span class="color-bar"><i class="fa fa-envelope"></i> CONTACT</span></a>
@@ -67,17 +113,17 @@ $(document).ready(function(){
     <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()"> ABOUT</a>
     <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()"> PORTFOLIO</a>
     <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()"> CONTACT</a>
-    <!-- <a href="#" class="w3-bar-item w3-button">SEARCH</a> -->
+    
   </div>
 </div>
 <!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 w3-display-container w3-opacity-min w3-hide-small" id="home">
+<div class="bgimg-1 w3-display-container w3-opacity-min w3-hide-small w3-hide-medium" id="home">
   <div class="w3-display-middle" style="white-space:nowrap;">
     <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">
     Enlighting the world with <span class="name">Simply <span class="rotate2">Excellent, Cheap, Fast, Diverse, Ballistic</span></span> Services</span>
   </div>
 </div>
-<div class="bgimg-1 w3-display-container w3-opacity-min w3-hide-large w3-hide-medium" id="home">
+<div class="bgimg-1 w3-display-container w3-opacity-min w3-hide-large" id="home">
   <div class="w3-display-middle" style="white-space:nowrap;">
     <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">
     <span class="name">Simply <br><span class="rotate">Excellent, Cheap, Fast, Diverse, Ballistic</span><br></span>Services</span>
@@ -90,13 +136,14 @@ $(document).ready(function(){
   <h4 class="w3-center">but you can call me Ryan Samarakoon</h4>
   <!-- <h3 class="w3-center">This section isn't done yet!</h3>
  -->  <!-- <p class="w3-center"><img src="http://www.askawebsite.com/askawebsite.com/gears.gif"></p> -->
-  <p class="w3-center"><a href="https://github.com/SimplyBallistic" target="_blank">
-  <img src="https://avatars0.githubusercontent.com/u/25571542?v=3&s=400" alt="GitHub"></a></p>
+  
   <h5 class="w3-center">I provide many services including Web Development, Java development and small photo edits</h5>
   <div class="w3-row">
     <div class="w3-col m6 w3-center w3-padding-large">
-      <p><b><i class="fa fa-user w3-margin-right"></i>Under Construction!</b></p><br>
-      <img src="https://media.giphy.com/media/3o7btQ0NH6Kl8CxCfK/giphy.gif" class="w3-round w3-image" alt="Under construction" width="500" height="333">
+      <p><b><i class="fa fa-github w3-margin-right"></i>Click the Image to Visit my Github!</b></p><br>
+      <a href="https://github.com/SimplyBallistic" target="_blank">
+     	 <img src="https://avatars0.githubusercontent.com/u/25571542?v=3&s=400" class="w3-round w3-image" alt="GitHub" width="500" height="333"></a>
+      
     </div>
 
     <!-- Hide this text on small devices -->
@@ -117,7 +164,7 @@ $(document).ready(function(){
   <div class="w3-light-grey">
     <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:70%">70%</div>
   </div>
-  <p class="w3-wide"><i class="fa fa-photo"></i></p>
+  <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop/Video Edits</p>
   <div class="w3-light-grey">
     <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
   </div>
@@ -156,7 +203,7 @@ $(document).ready(function(){
 
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="w3-row-padding w3-center">
-    <div class="w3-col m3">
+    <div class="w3-col m3 w3-hide-small">
       <img src="https://i.gyazo.com/9c74a45ebf042400fe8001e3b8b96b25.gif" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Enderman like Teleport">
     </div>
 
@@ -164,10 +211,10 @@ $(document).ready(function(){
       <img src="https://i.gyazo.com/6d3be347f660d6ea6627c27f08658af7.gif" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Flying Cars">
     </div>
 
-    <div class="w3-col m3">
+    <div class="w3-col m3 w3-hide-small">
       <img src="https://i.gyazo.com/252d9e1668bd9911303970f417855174.gif" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Spells">
     </div>
-      <div class="w3-col m3">
+      <div class="w3-col m3 w3-hide-small">
       <img src="https://proxy.spigotmc.org/867f334bf47b03a18625dc16d9602425022889f5?url=https%3A%2F%2Fi.gyazo.com%2Fc714fde3f89fb9c844f8568ca19996fc.gif" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="ProBleed: Resource on Spigot">
     </div>
 
@@ -187,12 +234,7 @@ $(document).ready(function(){
     
   </div>
   <h3 class="w3-center">You can check out these and more on my GitHub</h3>
-  <div id="github-card" class="w3-center"
-     data-username="SimplyBallistic"
-      data-max-repos="1"
-     data-sort-by="stars"
-     >
-</div>
+ 
 
 </div>
 
@@ -306,6 +348,7 @@ function toggleFunction() {
         x.className = x.className.replace(" w3-show", "");
     }
 }
+
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
 <!--
