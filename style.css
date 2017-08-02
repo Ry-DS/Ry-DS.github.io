@@ -6,10 +6,8 @@ body, html {
 }
 
 /* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4,.img-dirt,.img-obsidian,.img-end{
+    background: no-repeat fixed center;
     background-size: cover;
 }
 
@@ -34,6 +32,17 @@ body, html {
 .bgimg-4{
     background-image: url("https://static1.squarespace.com/static/5579006be4b01eeef8deb5c5/t/55930a90e4b0d217906d5af0/1435699856827/Work_Background.jpg");
     min-height: 400px;
+
+}
+.img-dirt{
+    background-image: url("https://www.walldevil.com/wallpapers/a94/pixels-wallpapers-minecraft-grass.jpg");
+    min-height: 100%;
+}
+.img-obsidian{
+    background-image: url("https://static.planetminecraft.com/files/resource_media/screenshot/1214/2012-04-07_202156_1912671.jpg");
+}
+.img-end{
+    background-image: url("http://i.imgur.com/daVxF.png");
 
 }
 .name {
