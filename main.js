@@ -42,5 +42,39 @@ $(document).ready(function(){
         } // End if
     });
 
-
+window.setInterval(changeColor,1250);
 });
+/*
+            	Copyright Ryan Samarakoon
+            	https://simplyballistic.github.io
+            	You care welcome to use this color changer if you retain this licence
+             */
+var color=0;
+function changeColor(){
+    var colorString="#ff9800";
+    switch(color) {
+        case 0:
+            //cyan
+            colorString="#00bcd4";
+            break;
+        case 1:
+            //lime
+            colorString="#cddc39";
+            break;
+        case 2:
+            //teal
+            colorString="#f44336";
+            break;
+
+        default:
+            //orange
+            colorString="#ff9800";
+    }
+
+    $(".color-animate").animate({
+        color: colorString
+    }, 500 );
+    color++;
+    if(color>3)
+        color=0;
+}

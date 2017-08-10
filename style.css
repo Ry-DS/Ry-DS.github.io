@@ -13,36 +13,36 @@ body, html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-    background-image: url("http://www.amazingwallpaperz.com/wp-content/uploads/Beautiful-Sunset-Landscape-Background-Wallpapers.jpg");
+    background-image: url("img/parallax1.jpg");
     min-height: 100%;
 }
 
 
 /* Second image (Portfolio) */
 .bgimg-2 {
-    background-image: url("https://images.alphacoders.com/176/176123.jpg");
+    background-image: url("img/parallax2.jpg");
     min-height: 400px;
 }
 
 /* Third image (Contact) */
 .bgimg-3 {
-    background-image: url("http://cdn.wallpapersafari.com/4/35/N74oKL.jpg");
+    background-image: url("img/parallax3.jpg");
     min-height: 400px;
 }
 .bgimg-4{
-    background-image: url("https://static1.squarespace.com/static/5579006be4b01eeef8deb5c5/t/55930a90e4b0d217906d5af0/1435699856827/Work_Background.jpg");
+    background-image: url("img/parallax4.jpg");
     min-height: 400px;
 
 }
 .img-dirt{
-    background-image: url("https://www.walldevil.com/wallpapers/a94/pixels-wallpapers-minecraft-grass.jpg");
+    background-image: url("img/dirt.jpg");
     min-height: 100%;
 }
 .img-obsidian{
-    background-image: url("https://static.planetminecraft.com/files/resource_media/screenshot/1214/2012-04-07_202156_1912671.jpg");
+    background-image: url("img/obsidian.jpg");
 }
 .img-end{
-    background-image: url("http://i.imgur.com/daVxF.png");
+    background-image: url("img/end.png");
 
 }
 .name {
