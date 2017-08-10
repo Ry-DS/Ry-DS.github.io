@@ -1,13 +1,31 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $to = "ryan2002.rs@gmail.com"; // this is your Email address
+    $from = $_POST['Email']; // this is the sender's Email address
+    $first_name = $_POST['Name'];
+    $last_name = $_POST['Message'];
+    $subject = "Form submission";
+    $subject2 = "Copy of your form submission";
+    $message = $first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['message'];
+    $message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['message'];
+    $completion = "";
+    $headers = "From:" . $from;
+    $headers2 = "From:" . $to;
+    mail($to,$subject,$message,$headers);
+    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
+    echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
+    $completion="Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
+    // You can also use header('Location: thank_you.php'); to redirect to another page.
+    }
+?>
 <!DOCTYPE html>
 <html>
 <head>
 
 	<!--Icon stuff-->
-	
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
 <link rel="icon" href="favicon.ico" type="favicon.ico">
-<link rel="manifest" href="/manifest.json">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
 <meta name="theme-color" content="#ffffff">
 
 
@@ -20,11 +38,16 @@
   src="https://code.jquery.com/jquery-3.2.1.js"
   integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
   crossorigin="anonymous"></script>
-  <script type="text/javascript" src="text-rotator/text-rotator.js"></script>
-  <link rel="stylesheet" type="text/css" href="text-rotator/textrotator.css" />
+    <!--Utils-->
+  <script type="text/javascript" src="js/text-rotator.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/textrotator.css" />
+
+
+    <link rel="stylesheet" type="text/css" href="css/remodal.css" />
+    <link rel="stylesheet" type="text/css" href="css/remodal-theme.css" />
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
+
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -35,69 +58,7 @@
 
 
 
-  <script>
-
-$(document).ready(function(){
-			$(".rotate").textrotator({
-        animation: "fade",
-        speed: 1250
-      });
-      $(".rotate2").textrotator({
-        animation: "flip",
-        speed: 1250
-      });
-      $(".rotate3").textrotator({
-        animation: "flipCube",
-        speed: 1500
-      });
-      $(".rotate4").textrotator({
-        animation: "flipUp",
-        speed: 1750
-      });
-      $(".rotate5").textrotator({
-        animation: "spin",
-        speed: 2000
-      });
-      // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-
-
-
-
-
-
-
-
-
-
-
-		});
-
-
-
-
-
-	</script>
+  <script src="main.js"></script>
 
 </head>
 
@@ -112,7 +73,7 @@ $(document).ready(function(){
     <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
     <a href="#purchase" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-usd"></i> PURCHASE</a>
 
-    
+
   </div>
  <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
@@ -120,7 +81,7 @@ $(document).ready(function(){
     <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()"> PORTFOLIO</a>
     <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()"> CONTACT</a>
     <a href="#purchase" class="w3-bar-item w3-button" onclick="toggleFunction()"> PURCHASE</a>
-    
+
   </div>
 </div>
 <!-- First Parallax Image with Logo Text -->
@@ -133,30 +94,30 @@ $(document).ready(function(){
     <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">
     Enlighting the world with <span class="name">Simply <span class="rotate2">Excellent, Cheap, Fast, Diverse, Ballistic</span></span> Services</span>
   </div>
-  
+
 </div>
 <body>
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">Hi There! I'm SimplyBallistic</h3>
-  <h4 class="w3-center">but you can call me Ryan Samarakoon</h4>
+  <h3 class="w3-center">Hi There! I'm Ryan Samarakoon</h3>
+  <h4 class="w3-center">A confident and skillful developer</h4>
   <!-- <h3 class="w3-center">This section isn't done yet!</h3>
  -->  <!-- <p class="w3-center"><img src="http://www.askawebsite.com/askawebsite.com/gears.gif"></p> -->
-  
-  <h5 class="w3-center">I provide many services including Web Development, Java development and small photo edits</h5>
+
+  <h5 class="w3-center">I provide many services including Web Development, Java development and Media Production</h5>
   <div class="w3-row">
     <div class="w3-col m6 w3-center w3-padding-large">
       <p><b><i class="fa fa-github w3-margin-right"></i>Click the Image to Visit my Github!</b></p><br>
       <a href="https://github.com/SimplyBallistic" target="_blank">
      	 <img src="https://avatars0.githubusercontent.com/u/25571542?v=3&s=400" class="w3-round w3-image scrollreveal" alt="GitHub" width="500" height="333"></a>
-      
+
     </div>
 
     <!-- Hide this text on small devices -->
     <div class="w3-col m6 w3-hide-small w3-padding-large scrollreveal">
-      <p>Hey! I am a Java developer with around 3 years of experience and 1.5 years of experience with the Bukkit API. I'm mostly a game developer which you could make out from my GitHub (click the image above) using Slick2D and LibGDX. I got into Bukkit when I realized how fun it is to manipulate a large multiplayer 3D world and have been working with ever since. I started off with Forge but it never took off for me. Manipulation of players on a large server stood out more to me hence my decision. I have also got into Android development where I have worked with FireBase and MySQL in order to make small note and chat apps. I also have a game planning to release on December 31st. You can see a preview in my <a href="#portfolio" title="portfolio" class="w3-hover-opacity">portfolio.</a><br>
+      <p>Hey! I am a Java developer with around 3 years of experience and 1.5 years of experience with the Bukkit API. I'm mostly a game developer which you could make out from my GitHub (click the image above) using LibGDX. I got into Bukkit when I realized how fun it is to manipulate a large multiplayer 3D world and have been working with ever since. I started off with Forge but it never took off for me. Manipulation of players on a large server stood out more to me hence my decision. I have also got into Android development where I have worked with FireBase and MySQL in order to make small note and chat apps. I also have a game planning to release on December 31st. You can see a preview in my <a href="#portfolio" title="portfolio" class="w3-hover-opacity">portfolio.</a><br>
       	<br>
-      	After mastering Java, I decided to go and expand my toolbelt. This involved giving websites a try. I have started a few months ago and I am confident to say I got the hang of it!  This is one of the few websites I've made with my knowledge of HTML and CSS (with a pinch of JS). If you need a website designed, a small utility in Java or even a simple photo edit, I got it covered! <a href="#contact" title="contact" class="w3-hover-opacity">Contact me</a> down below. 
+      	After mastering Java, I decided to go and expand my toolbelt. This involved giving websites a try. I have started a few months ago and I am confident to say I got the hang of it!  This is one of the few websites I've made with my knowledge of HTML and CSS (with a pinch of JS). If you need a website designed, a small utility in Java or even a simple photo edit, I got it covered! <a href="#contact" title="contact" class="w3-hover-opacity">Contact me</a> down below.
 
        </p>
     </div>
@@ -170,7 +131,7 @@ $(document).ready(function(){
   <div class="w3-light-grey">
     <div class="w3-container w3-padding-small w3-dark-grey w3-center scrollreveal" style="width:70%">70%</div>
   </div>
-  <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop/Video Edits</p>
+  <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop/Video Production</p>
   <div class="w3-light-grey">
     <div class="w3-container w3-padding-small w3-dark-grey w3-center scrollreveal" style="width:75%">75%</div>
   </div>
@@ -191,8 +152,8 @@ $(document).ready(function(){
     Completed Projects
   </div>
   <div class="w3-quarter w3-section scrollreveal">
-    <span class="w3-xlarge">5+</span><br>
-    Happy Clients
+    <span class="w3-xlarge">400+</span><br>
+    Contributions
 
   </div>
 </div>
@@ -200,7 +161,8 @@ $(document).ready(function(){
 <!-- Second Parallax Image with Portfolio Text -->
 <div class="bgimg-2 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+      <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+
   </div>
 </div>
 
@@ -226,7 +188,7 @@ $(document).ready(function(){
       <img src="https://proxy.spigotmc.org/867f334bf47b03a18625dc16d9602425022889f5?url=https%3A%2F%2Fi.gyazo.com%2Fc714fde3f89fb9c844f8568ca19996fc.gif" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity scrollreveal" alt="ProBleed: Resource on Spigot">
     </div>
 
-    
+
   </div>
 
   <div class="w3-row-padding w3-center w3-section">
@@ -238,11 +200,11 @@ $(document).ready(function(){
       <img src="https://i.gyazo.com/e18582a81907019db1fadea3fde88ce0.gif" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity scrollreveal" alt="Enfinity: A 3D space game">
     </div>
 
-    
-    
+
+
   </div>
   <h3 class="w3-center">You can check out these and more on my GitHub</h3>
- 
+
 
 </div>
 
@@ -265,13 +227,13 @@ $(document).ready(function(){
 <!-- Container (Contact Section) -->
 <div class="w3-content w3-container w3-padding-64" id="contact">
   <h3 class="w3-center">CONTACT DETAILS</h3>
-  <p class="w3-center"><em>You are welcome to contact me!</em></p>
-  <p class="w3-center"><em><i>Pssst!</i> Click the tiny icons for a shortcut!</em></p>
+  <p class="w3-center"><em>You are welcome to contact me</em></p>
+  <p class="w3-center"><em>Click the icons for a shortcut</em></p>
 
   <div class="w3-row w3-padding-32 w3-section">
     <div class="w3-col m4 w3-container">
-      
-      
+
+
     </div>
     <div class="w3-col m8 w3-panel">
       <div class="w3-large w3-margin-bottom">
@@ -283,30 +245,17 @@ $(document).ready(function(){
 
 
       </div>
-      
-      
+
+
     <a href="resume.docx" class="w3-button w3-light-grey w3-padding-large w3-section w3-hover-red scrollreveal">
       <i class="fa fa-download"></i> Download Resume
     </a>
-   
-	
-      
+
+
+
 </div>
 
-      <!-- <form action="/action_page.php" target="_blank">
-        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-          </div>
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-          </div>
-        </div>
-        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-        <button class="w3-button w3-black w3-right w3-section" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </form> -->
+
     </div>
   </div>
 
@@ -393,7 +342,7 @@ $(document).ready(function(){
 
                 </li>
                 <li class="w3-light-grey w3-padding-24">
-                    <a class="w3-button w3-white w3-padding-large w3-hover-black" href="#contact">Get a Quote*</a>
+                    <a class="w3-button w3-white w3-padding-large w3-hover-black" href="mailto:ryan93@live.com.au?subject=Dirt%20Bundle" target="_blank">Get a Quote *</a>
                 </li>
             </ul>
         </div>
@@ -410,7 +359,7 @@ $(document).ready(function(){
 
                 </li>
                 <li class="w3-light-grey w3-padding-24">
-                    <a class="w3-button w3-white w3-padding-large w3-hover-black" href="#contact">Get a Quote*</a>
+                    <a class="w3-button w3-white w3-padding-large w3-hover-black" href="mailto:ryan93@live.com.au?subject=Obsidian%20Bundle" target="_blank">Get a Quote *</a>
                 </li>
             </ul>
         </div>
@@ -426,7 +375,8 @@ $(document).ready(function(){
 
                 </li>
                 <li class="w3-light-grey w3-padding-24">
-                    <a class="w3-button w3-white w3-padding-large w3-hover-black" href="#contact">Get a Quote*</a>
+                    <!--<button class="w3-button w3-white w3-padding-large w3-hover-black" data-remodal-target="modal" onclick="onPurchaseClick('End Bundle');">Get a Quote*</button>-->
+                    <a class="w3-button w3-white w3-padding-large w3-hover-black" href="mailto:ryan93@live.com.au?subject=End%20Bundle" target="_blank">Get a Quote *</a>
                 </li>
             </ul>
         </div>
@@ -440,6 +390,37 @@ $(document).ready(function(){
 
 </div>
 
+<!--Remodal Popup-->
+<div class="remodal" data-remodal-id="modal">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <form method="post" action="">
+    <h3 id="modal-title">Contact</h3>
+        <span class="error"><?php echo $completion;?></span>
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+
+
+    <br>
+    <button data-remodal-action="cancel" class="w3-button w3-light-grey w3-padding-large w3-section w3-hover-red"><i class="fa fa-times"></i><br>Cancel</button>
+    <button class="w3-button w3-light-grey w3-padding-large w3-section w3-hover-green" type="submit"><i class="fa fa-paper-plane"></i><br>SEND</button>
+    </form>
+</div>
+<script>
+    function onPurchaseClick(string){
+        $('#modal-title').html(string);
+
+    }
+
+</script>
+
+
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
@@ -449,7 +430,7 @@ $(document).ready(function(){
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
   <script type="text/javascript" src="https://counter6.freecounter.ovh/private/counter.js?c=s27sg36l8lehhze3t5j56uxbqalgwkpn&down=async" async></script><noscript><a href="https://www.freecounterstat.com" title="free website hit counters"><img src="https://counter6.freecounter.ovh/private/freecounterstat.php?c=s27sg36l8lehhze3t5j56uxbqalgwkpn" border="0" title="free website hit counters" alt="free website hit counters"></a></noscript>
 </footer>
- 
+
 <!-- Add Google Maps -->
 <script>
 
@@ -502,8 +483,8 @@ function toggleFunction() {
 
 
 
-
-
+<!--Start Remodal-->
+<script type="text/javascript" src="js/remodal.js"></script>
 <!--Start Scroll Revel-->
 <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 <script type="text/javascript">
