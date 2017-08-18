@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function () {
     $(".rotate").textrotator({
         animation: "fade",
         speed: 1250
@@ -20,7 +20,7 @@ $(document).ready(function(){
         speed: 2000
     });
     // Add smooth scrolling to all links
-    $("a").on('click', function(event) {
+    $("a").on('click', function (event) {
 
         // Make sure this.hash has a value before overriding default behavior
         if (this.hash !== "") {
@@ -34,7 +34,7 @@ $(document).ready(function(){
             // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
             $('html, body').animate({
                 scrollTop: $(hash).offset().top
-            }, 800, function(){
+            }, 800, function () {
 
                 // Add hash (#) to URL when done scrolling (default click behavior)
                 window.location.hash = hash;
@@ -42,39 +42,40 @@ $(document).ready(function(){
         } // End if
     });
 
-    window.setInterval(changeColor,1250);
+    window.setInterval(changeColor, 1250);
 });
 /*
                 Copyright Ryan Samarakoon
                 https://simplyballistic.github.io
                 You care welcome to use this color changer if you retain this licence
              */
-var color=0;
-function changeColor(){
-    var colorString="#ff9800";
-    switch(color) {
+var color = 0;
+
+function changeColor() {
+    var colorString = "#ff9800";
+    switch (color) {
         case 0:
             //cyan
-            colorString="#00bcd4";
+            colorString = "#00bcd4";
             break;
         case 1:
             //lime
-            colorString="#cddc39";
+            colorString = "#cddc39";
             break;
         case 2:
             //teal
-            colorString="#f44336";
+            colorString = "#f44336";
             break;
 
         default:
             //orange
-            colorString="#ff9800";
+            colorString = "#ff9800";
     }
 
     $(".color-animate").animate({
         color: colorString
-    }, 500 );
+    }, 500);
     color++;
-    if(color>3)
-        color=0;
+    if (color > 3)
+        color = 0;
 }

@@ -22,399 +22,349 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <html>
 <head>
 
-	<!--Icon stuff-->
+    <!--Icon stuff-->
 
-<link rel="icon" href="favicon.ico" type="favicon.ico">
+    <link rel="icon" href="favicon.ico" type="favicon.ico">
 
-<meta name="theme-color" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
 
 
+    <meta charset="utf-8">
+    <title>Ryan Samarakoon</title>
+    <script src="https://www.google.com/jsapi" type="text/javascript"></script>
 
-	<meta charset="utf-8">
-	<title>Ryan Samarakoon</title>
-	<script src="https://www.google.com/jsapi" type="text/javascript"></script>
-
-	<script
-  src="https://code.jquery.com/jquery-3.2.1.js"
-  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-  crossorigin="anonymous"></script>
-<script src="js/jquery-color.js"></script>
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.js"
+            integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+            crossorigin="anonymous"></script>
+    <script src="js/jquery-color.js"></script>
 
     <!--Utils-->
-  <script type="text/javascript" src="js/text-rotator.js"></script>
-  <link rel="stylesheet" type="text/css" href="css/textrotator.css" />
+    <script type="text/javascript" src="js/text-rotator.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/textrotator.css"/>
 
 
-    <link rel="stylesheet" type="text/css" href="css/remodal.css" />
-    <link rel="stylesheet" type="text/css" href="css/remodal-theme.css" />
+    <link rel="stylesheet" type="text/css" href="css/remodal.css"/>
+    <link rel="stylesheet" type="text/css" href="css/remodal-theme.css"/>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
-
-
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 
 
-
-
-  <script>$(document).ready(function(){
-      $(".rotate").textrotator({
-          animation: "fade",
-          speed: 1250
-      });
-      $(".rotate2").textrotator({
-          animation: "flip",
-          speed: 1250
-      });
-      $(".rotate3").textrotator({
-          animation: "flipCube",
-          speed: 1500
-      });
-      $(".rotate4").textrotator({
-          animation: "flipUp",
-          speed: 1750
-      });
-      $(".rotate5").textrotator({
-          animation: "spin",
-          speed: 2000
-      });
-      // Add smooth scrolling to all links
-      $("a").on('click', function(event) {
-
-          // Make sure this.hash has a value before overriding default behavior
-          if (this.hash !== "") {
-              // Prevent default anchor click behavior
-              event.preventDefault();
-
-              // Store hash
-              var hash = this.hash;
-
-              // Using jQuery's animate() method to add smooth page scroll
-              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-              $('html, body').animate({
-                  scrollTop: $(hash).offset().top
-              }, 800, function(){
-
-                  // Add hash (#) to URL when done scrolling (default click behavior)
-                  window.location.hash = hash;
-              });
-          } // End if
-      });
-
-      window.setInterval(changeColor,1250);
-  });
-  /*
-                  Copyright Ryan Samarakoon
-                  https://simplyballistic.github.io
-                  You care welcome to use this color changer if you retain this licence
-               */
-  var color=0;
-  function changeColor(){
-      var colorString="#ff9800";
-      switch(color) {
-          case 0:
-              //cyan
-              colorString="#00bcd4";
-              break;
-          case 1:
-              //lime
-              colorString="#cddc39";
-              break;
-          case 2:
-              //teal
-              colorString="#f44336";
-              break;
-
-          default:
-              //orange
-              colorString="#ff9800";
-      }
-
-      $(".color-animate").animate({
-          color: colorString
-      }, 500 );
-      color++;
-      if(color>3)
-          color=0;
-  }</script>
+    <script src="main.js"></script>
 
 </head>
 
 <div class="w3-top">
-  <div class="w3-bar w3-text-light-grey" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      <i class="fa fa-bars"></i>
-    </a>
-    <a href="#home" class="w3-bar-item w3-button w3-hover-red">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button w3-hide-small"> <i class="fa fa-user"></i> ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"> <i class="fa fa-th"></i> PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-    <a href="#purchase" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-usd"></i> PURCHASE</a>
+    <div class="w3-bar w3-text-light-grey" id="myNavbar">
+        <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);"
+           onclick="toggleFunction()" title="Toggle Navigation Menu">
+            <i class="fa fa-bars"></i>
+        </a>
+        <a href="#home" class="w3-bar-item w3-button w3-hover-red">HOME</a>
+        <a href="#about" class="w3-bar-item w3-button w3-hide-small"> <i class="fa fa-user"></i> ABOUT</a>
+        <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"> <i class="fa fa-th"></i> PORTFOLIO</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+        <a href="#purchase" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-usd"></i> PURCHASE</a>
 
 
-  </div>
- <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()"> ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()"> PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()"> CONTACT</a>
-    <a href="#purchase" class="w3-bar-item w3-button" onclick="toggleFunction()"> PURCHASE</a>
+    </div>
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+        <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()"> ABOUT</a>
+        <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()"> PORTFOLIO</a>
+        <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()"> CONTACT</a>
+        <a href="#purchase" class="w3-bar-item w3-button" onclick="toggleFunction()"> PURCHASE</a>
 
-  </div>
+    </div>
 </div>
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-  <div class="w3-display-middle  w3-hide-large" style="white-space:nowrap;">
+    <div class="w3-display-middle  w3-hide-large" style="white-space:nowrap;">
     <span class="w3-center w3-padding-large w3-xlarge w3-wide w3-animate-opacity w3-text-light-grey">
-    <span class="w3-text-white">Simply <br><span class="rotate4">Excellent, Cheap, Fast, Diverse, Ballistic</span><br></span>Services</span>
-  </div>
-  <div class="w3-display-middle w3-hide-medium w3-hide-small" style="white-space:nowrap;">
+    <span class="w3-text-white">Simply <br><span
+            class="rotate4">Excellent, Cheap, Fast, Diverse, Ballistic</span><br></span>Services</span>
+    </div>
+    <div class="w3-display-middle w3-hide-medium w3-hide-small" style="white-space:nowrap;">
     <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity color-animate">
     Enlighting the world with <span class="color-animate">Simply <span class="rotate2">Excellent, Cheap, Fast, Diverse, Ballistic</span></span> Services</span>
-  </div>
+    </div>
 
 </div>
 <body>
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">Hi There! I'm Ryan Samarakoon</h3>
-  <h4 class="w3-center">A confident and skillful developer</h4>
-  <!-- <h3 class="w3-center">This section isn't done yet!</h3>
- -->  <!-- <p class="w3-center"><img src="http://www.askawebsite.com/askawebsite.com/gears.gif"></p> -->
+    <h3 class="w3-center">Hi There! I'm Ryan Samarakoon</h3>
+    <h4 class="w3-center">A confident and skillful developer</h4>
+    <!-- <h3 class="w3-center">This section isn't done yet!</h3>
+   -->  <!-- <p class="w3-center"><img src="http://www.askawebsite.com/askawebsite.com/gears.gif"></p> -->
 
-  <h5 class="w3-center">I provide many services including Web Development, Java development and Media Production</h5>
-  <div class="w3-row">
-    <div class="w3-col m6 w3-center w3-padding-large">
-      <p><b><i class="fa fa-github w3-margin-right"></i>Click the Image to Visit my Github!</b></p><br>
-      <a href="https://github.com/SimplyBallistic" target="_blank">
-     	 <img src="https://avatars0.githubusercontent.com/u/25571542?v=3&s=400" class="w3-round w3-image scrollreveal" alt="GitHub" width="500" height="333"></a>
+    <h5 class="w3-center">I provide many services including Web Development, Java development and Media Production</h5>
+    <div class="w3-row">
+        <div class="w3-col m6 w3-center w3-padding-large">
+            <p><b><i class="fa fa-github w3-margin-right"></i>Click the Image to Visit my Github!</b></p><br>
+            <a href="https://github.com/SimplyBallistic" target="_blank">
+                <img src="https://avatars0.githubusercontent.com/u/25571542?v=3&s=400"
+                     class="w3-round w3-image scrollreveal" alt="GitHub" width="500" height="333"></a>
 
+        </div>
+
+        <!-- Hide this text on small devices -->
+        <div class="w3-col m6 w3-hide-small w3-padding-large scrollreveal">
+            <p>Hey! I am a Java developer with around 3 years of experience and 1.5 years of experience with the Bukkit
+                API. I'm mostly a game developer which you could make out from my GitHub (click the image above) using
+                LibGDX. I got into Bukkit when I realized how fun it is to manipulate a large multiplayer 3D world and
+                have been working with ever since. I started off with Forge but it never took off for me. Manipulation
+                of players on a large server stood out more to me hence my decision. I have also got into Android
+                development where I have worked with FireBase and MySQL in order to make small note and chat apps. I
+                also have a game planning to release on December 31st. You can see a preview in my <a href="#portfolio"
+                                                                                                      title="portfolio"
+                                                                                                      class="w3-hover-opacity">portfolio.</a><br>
+                <br>
+                After mastering Java, I decided to go and expand my toolbelt. This involved giving websites a try. I
+                have started a few months ago and I am confident to say I got the hang of it! This is one of the few
+                websites I've made with my knowledge of HTML and CSS (with a pinch of JS). If you need a website
+                designed, a small utility in Java or even a simple photo edit, I got it covered! <a href="#contact"
+                                                                                                    title="contact"
+                                                                                                    class="w3-hover-opacity">Contact
+                    me</a> down below.
+
+            </p>
+        </div>
     </div>
-
-    <!-- Hide this text on small devices -->
-    <div class="w3-col m6 w3-hide-small w3-padding-large scrollreveal">
-      <p>Hey! I am a Java developer with around 3 years of experience and 1.5 years of experience with the Bukkit API. I'm mostly a game developer which you could make out from my GitHub (click the image above) using LibGDX. I got into Bukkit when I realized how fun it is to manipulate a large multiplayer 3D world and have been working with ever since. I started off with Forge but it never took off for me. Manipulation of players on a large server stood out more to me hence my decision. I have also got into Android development where I have worked with FireBase and MySQL in order to make small note and chat apps. I also have a game planning to release on December 31st. You can see a preview in my <a href="#portfolio" title="portfolio" class="w3-hover-opacity">portfolio.</a><br>
-      	<br>
-      	After mastering Java, I decided to go and expand my toolbelt. This involved giving websites a try. I have started a few months ago and I am confident to say I got the hang of it!  This is one of the few websites I've made with my knowledge of HTML and CSS (with a pinch of JS). If you need a website designed, a small utility in Java or even a simple photo edit, I got it covered! <a href="#contact" title="contact" class="w3-hover-opacity">Contact me</a> down below.
-
-       </p>
+    <p class="w3-large w3-center w3-padding-16">My Skills:</p>
+    <p class="w3-wide"><i class="fa fa-code"></i>Java</p>
+    <div class="w3-light-grey">
+        <div class="w3-container w3-padding-small w3-dark-grey w3-center scrollreveal" style="width:90%">90%</div>
     </div>
-  </div>
-  <p class="w3-large w3-center w3-padding-16">My Skills:</p>
-  <p class="w3-wide"><i class="fa fa-code"></i>Java</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center scrollreveal" style="width:90%">90%</div>
-  </div>
-  <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center scrollreveal" style="width:70%">70%</div>
-  </div>
-  <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop/Video Production</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center scrollreveal" style="width:75%">75%</div>
-  </div>
+    <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
+    <div class="w3-light-grey">
+        <div class="w3-container w3-padding-small w3-dark-grey w3-center scrollreveal" style="width:70%">70%</div>
+    </div>
+    <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop/Video Production</p>
+    <div class="w3-light-grey">
+        <div class="w3-container w3-padding-small w3-dark-grey w3-center scrollreveal" style="width:75%">75%</div>
+    </div>
 </div>
 
 <div class="w3-row w3-center w3-dark-grey w3-padding-16">
-  <div class="w3-quarter w3-section scrollreveal">
-    <span class="w3-xlarge">Free</span><br>
-    Test Server
+    <div class="w3-quarter w3-section scrollreveal">
+        <span class="w3-xlarge">Free</span><br>
+        Test Server
 
-  </div>
-  <div class="w3-quarter w3-section scrollreveal">
-    <span class="w3-xlarge">Private</span><br>
-    Repositories
-  </div>
-  <div class="w3-quarter w3-section scrollreveal">
-    <span class="w3-xlarge">20+</span><br>
-    Completed Projects
-  </div>
-  <div class="w3-quarter w3-section scrollreveal">
-    <span class="w3-xlarge">400+</span><br>
-    Contributions
+    </div>
+    <div class="w3-quarter w3-section scrollreveal">
+        <span class="w3-xlarge">Private</span><br>
+        Repositories
+    </div>
+    <div class="w3-quarter w3-section scrollreveal">
+        <span class="w3-xlarge">20+</span><br>
+        Completed Projects
+    </div>
+    <div class="w3-quarter w3-section scrollreveal">
+        <span class="w3-xlarge">400+</span><br>
+        Contributions
 
-  </div>
+    </div>
 </div>
 
 <!-- Second Parallax Image with Portfolio Text -->
 <div class="bgimg-2 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-      <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+    <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
 
-  </div>
+    </div>
 </div>
 
 <!-- Container (Portfolio Section) -->
 <div class="w3-content w3-container w3-padding-64" id="portfolio">
-  <h3 class="w3-center">Projects</h3>
-  <p class="w3-center"><em>Here are some of the latest plugins/games I've been working on<br> Click on the images to make them bigger</em></p><br>
+    <h3 class="w3-center">Projects</h3>
+    <p class="w3-center"><em>Here are some of the latest plugins/games I've been working on<br> Click on the images to
+        make them bigger</em></p><br>
 
-  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <div class="w3-row-padding w3-center">
-    <div class="w3-col m3 w3-hide-small">
-      <img src="https://i.gyazo.com/9c74a45ebf042400fe8001e3b8b96b25.gif" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity scrollreveal" alt="Enderman like Teleport">
+    <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+    <div class="w3-row-padding w3-center">
+        <div class="w3-col m3 w3-hide-small">
+            <img src="https://i.gyazo.com/9c74a45ebf042400fe8001e3b8b96b25.gif" style="width:100%"
+                 onclick="onClick(this)" class="w3-hover-opacity scrollreveal" alt="Enderman like Teleport">
+        </div>
+
+        <div class="w3-col m3">
+            <img src="https://i.gyazo.com/6d3be347f660d6ea6627c27f08658af7.gif" style="width:100%"
+                 onclick="onClick(this)" class="w3-hover-opacity scrollreveal" alt="Flying Cars">
+        </div>
+
+        <div class="w3-col m3 w3-hide-small">
+            <img src="https://i.gyazo.com/252d9e1668bd9911303970f417855174.gif" style="width:100%"
+                 onclick="onClick(this)" class="w3-hover-opacity scrollreveal" alt="Spells">
+        </div>
+        <div class="w3-col m3 w3-hide-small">
+            <img src="https://proxy.spigotmc.org/867f334bf47b03a18625dc16d9602425022889f5?url=https%3A%2F%2Fi.gyazo.com%2Fc714fde3f89fb9c844f8568ca19996fc.gif"
+                 style="width:100%" onclick="onClick(this)" class="w3-hover-opacity scrollreveal"
+                 alt="ProBleed: Resource on Spigot">
+        </div>
+
+
     </div>
 
-    <div class="w3-col m3">
-      <img src="https://i.gyazo.com/6d3be347f660d6ea6627c27f08658af7.gif" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity scrollreveal" alt="Flying Cars">
+    <div class="w3-row-padding w3-center w3-section">
+        <div class="w3-col m3">
+            <img src="https://i.gyazo.com/fd8c59d6ac8c4deea209db96fb83f01c.gif" style="width:100%"
+                 onclick="onClick(this)" class="w3-hover-opacity scrollreveal"
+                 alt="HIIDE: Android game releasing on December 31st">
+        </div>
+
+        <div class="w3-col m3">
+            <img src="https://i.gyazo.com/e18582a81907019db1fadea3fde88ce0.gif" style="width:100%"
+                 onclick="onClick(this)" class="w3-hover-opacity scrollreveal" alt="Enfinity: A 3D space game">
+        </div>
+
+
     </div>
-
-    <div class="w3-col m3 w3-hide-small">
-      <img src="https://i.gyazo.com/252d9e1668bd9911303970f417855174.gif" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity scrollreveal" alt="Spells">
-    </div>
-      <div class="w3-col m3 w3-hide-small">
-      <img src="https://proxy.spigotmc.org/867f334bf47b03a18625dc16d9602425022889f5?url=https%3A%2F%2Fi.gyazo.com%2Fc714fde3f89fb9c844f8568ca19996fc.gif" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity scrollreveal" alt="ProBleed: Resource on Spigot">
-    </div>
-
-
-  </div>
-
-  <div class="w3-row-padding w3-center w3-section">
-   <div class="w3-col m3">
-      <img src="https://i.gyazo.com/fd8c59d6ac8c4deea209db96fb83f01c.gif" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity scrollreveal" alt="HIIDE: Android game releasing on December 31st">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="https://i.gyazo.com/e18582a81907019db1fadea3fde88ce0.gif" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity scrollreveal" alt="Enfinity: A 3D space game">
-    </div>
-
-
-
-  </div>
-  <h3 class="w3-center">You can check out these and more on my GitHub</h3>
+    <h3 class="w3-center">You can check out these and more on my GitHub</h3>
 
 
 </div>
 
 <!-- Modal for full size images on click-->
 <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" class="w3-image">
-    <p id="caption" class="w3-opacity w3-large"></p>
-  </div>
+    <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+        <img id="img01" class="w3-image">
+        <p id="caption" class="w3-opacity w3-large"></p>
+    </div>
 </div>
 
 <!-- Third Parallax Image with Portfolio Text -->
 <div class="bgimg-3 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
-  </div>
+    <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+    </div>
 </div>
 
 <!-- Container (Contact Section) -->
 <div class="w3-content w3-container w3-padding-64" id="contact">
-  <h3 class="w3-center">CONTACT DETAILS</h3>
-  <p class="w3-center"><em>You are welcome to contact me</em></p>
-  <p class="w3-center"><em>Click the icons for a shortcut</em></p>
+    <h3 class="w3-center">CONTACT DETAILS</h3>
+    <p class="w3-center"><em>You are welcome to contact me</em></p>
+    <p class="w3-center"><em>Click the icons for a shortcut</em></p>
 
-  <div class="w3-row w3-padding-32 w3-section">
-    <div class="w3-col m4 w3-container">
+    <div class="w3-row w3-padding-32 w3-section">
+        <div class="w3-col m4 w3-container">
+
+
+        </div>
+        <div class="w3-col m8 w3-panel">
+            <div class="w3-large w3-margin-bottom">
+                <i class="fa fa-map-marker fa-fw w3-xlarge w3-margin-right"></i>Melbourne Australia<br>
+                <a href="skype:live:ryan93_2?chat" title="Skype"><i
+                        class="fa fa-skype fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i></a>live:ryan93_2<br>
+                <a href="mailto:ryan93@live.com.au?Subject=Hello%20Ryan" title="Email"><i
+                        class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i></a>ryan93@live.com.au<br>
+                <a href="https://github.com/SimplyBallistic" title="GitHub"><i
+                        class="fa fa-github fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i></a>SimplyBallistic<br>
+                <a href="https://www.spigotmc.org/members/xballisticblazex.293920/" title="SpigotMC"><i
+                        class="fa fa-user fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i></a>Spigot:
+                xBallisticBlazex<br>
+
+
+            </div>
+
+
+            <a href="resume.docx" class="w3-button w3-light-grey w3-padding-large w3-section w3-hover-red scrollreveal">
+                <i class="fa fa-download"></i> Download Resume
+            </a>
+
+
+        </div>
 
 
     </div>
-    <div class="w3-col m8 w3-panel">
-      <div class="w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker fa-fw w3-xlarge w3-margin-right"></i>Melbourne    Australia<br>
-        <a href="skype:live:ryan93_2?chat" title="Skype"><i class="fa fa-skype fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i></a>live:ryan93_2<br>
-        <a href="mailto:ryan93@live.com.au?Subject=Hello%20Ryan" title="Email"><i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i></a>ryan93@live.com.au<br>
-        <a href="https://github.com/SimplyBallistic" title="GitHub"><i class="fa fa-github fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i></a>SimplyBallistic<br>
-        <a href="https://www.spigotmc.org/members/xballisticblazex.293920/" title="SpigotMC"><i class="fa fa-user fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i></a>Spigot: xBallisticBlazex<br>
-
-
-      </div>
-
-
-    <a href="resume.docx" class="w3-button w3-light-grey w3-padding-large w3-section w3-hover-red scrollreveal">
-      <i class="fa fa-download"></i> Download Resume
-    </a>
-
-
-
 </div>
-
-
-    </div>
-  </div>
 
 </div>
 
 <!-- 4th Parallax Image with Purchase Text -->
 <div class="bgimg-4 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-white w3-wide">PURCHASE</span>
-  </div>
+    <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-white w3-wide">PURCHASE</span>
+    </div>
 </div>
 <!--Purchase section-->
 
 <div class="w3-content w3-container w3-padding-64" id="purchase">
-  <h3 class="w3-padding-16 w3-center">Website Design</h3>
-  <div class="w3-row-padding scrollreveal" style="margin:0 -16px">
-    <div class="w3-third w3-margin-bottom">
-      <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-        <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic Cover Page</li>
-        <li class="w3-padding-16">One Simple page</li>
-        <li class="w3-padding-16">Responsive and Adaptive for mobile</li>
-        <li class="w3-padding-16">Free Private Repository</li>
-        <li class="w3-padding-16">Support for One month+</li>
-        <li class="w3-padding-16">
-          <h2>$ 250</h2>
+    <h3 class="w3-padding-16 w3-center">Website Design</h3>
+    <div class="w3-row-padding scrollreveal" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+            <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+                <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic Cover Page</li>
+                <li class="w3-padding-16">One Simple page</li>
+                <li class="w3-padding-16">Responsive and Adaptive for mobile</li>
+                <li class="w3-padding-16">Free Private Repository</li>
+                <li class="w3-padding-16">Support for One month+</li>
+                <li class="w3-padding-16">
+                    <h2>$ 250</h2>
 
-        </li>
-        <li class="w3-light-grey w3-padding-24">
-            <a class="w3-button w3-white w3-padding-large w3-hover-black" href="mailto:ryan93@live.com.au?subject=Website-Basic">Sign Up</a>
-        </li>
-      </ul>
+                </li>
+                <li class="w3-light-grey w3-padding-24">
+                    <a class="w3-button w3-white w3-padding-large w3-hover-black"
+                       href="mailto:ryan93@live.com.au?subject=Website-Basic">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="w3-third">
+            <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+                <li class="w3-dark-grey w3-xlarge w3-padding-32">Professional Website</li>
+                <li class="w3-padding-16 w3-light-grey"><i>All features from the Basic Pack including...</i></li>
+                <li class="w3-padding-16">Up to 5 pages</li>
+                <li class="w3-padding-16">Interactive Mockup/Preview</li>
+                <li class="w3-padding-16">Up to Five Month Support</li>
+                <li class="w3-padding-16">
+                    <h2>$ 500</h2>
+
+                </li>
+                <li class="w3-light-grey w3-padding-24">
+                    <a class="w3-button w3-white w3-padding-large w3-hover-black"
+                       href="mailto:ryan93@live.com.au?subject=Website-Professional">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+        <div class="w3-third">
+            <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+                <li class="w3-dark-grey w3-xlarge w3-padding-32">Business Website</li>
+                <li class="w3-padding-16 w3-light-grey"><i>All features from the Pro Pack including..</i></li>
+                <li class="w3-padding-16">Up to 10 pages +</li>
+                <li class="w3-padding-16">Complex Web Backend*</li>
+                <li class="w3-padding-16">Endless Support*</li>
+                <li class="w3-padding-16">
+                    <h2>$ 1300+</h2>
+
+                </li>
+                <li class="w3-light-grey w3-padding-24">
+                    <a class="w3-button w3-white w3-padding-large w3-hover-black"
+                       href="mailto:ryan93@live.com.au?subject=Website-Business">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+        <!-- End Grid/Pricing tables -->
+        <!-- Start bukkit pricing -->
+
+
     </div>
-
-    <div class="w3-third">
-      <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-        <li class="w3-dark-grey w3-xlarge w3-padding-32">Professional Website</li>
-        <li class="w3-padding-16 w3-light-grey"><i>All features from the Basic Pack including...</i></li>
-        <li class="w3-padding-16">Up to 5 pages</li>
-        <li class="w3-padding-16">Interactive Mockup/Preview</li>
-        <li class="w3-padding-16">Up to Five Month Support</li>
-        <li class="w3-padding-16">
-          <h2>$ 500</h2>
-
-        </li>
-        <li class="w3-light-grey w3-padding-24">
-            <a class="w3-button w3-white w3-padding-large w3-hover-black" href="mailto:ryan93@live.com.au?subject=Website-Professional">Sign Up</a>
-        </li>
-      </ul>
-    </div>
-    <div class="w3-third">
-      <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-        <li class="w3-dark-grey w3-xlarge w3-padding-32">Business Website</li>
-          <li class="w3-padding-16 w3-light-grey"><i>All features from the Pro Pack including..</i></li>
-        <li class="w3-padding-16">Up to 10 pages +</li>
-        <li class="w3-padding-16">Complex Web Backend*</li>
-        <li class="w3-padding-16">Endless Support*</li>
-        <li class="w3-padding-16">
-          <h2>$ 1300+</h2>
-
-        </li>
-        <li class="w3-light-grey w3-padding-24">
-          <a class="w3-button w3-white w3-padding-large w3-hover-black" href="mailto:ryan93@live.com.au?subject=Website-Business">Sign Up</a>
-        </li>
-      </ul>
-    </div>
-    <!-- End Grid/Pricing tables -->
-    <!-- Start bukkit pricing -->
-
-
-  </div>
     <h3 class="w3-padding-16 w3-center">Bukkit & Bungee Plugin Development</h3>
-    <h4 class="w3-padding-16 w3-center"><i>All high tier packages include features from their lower counterparts</i></h4>
+    <h4 class="w3-padding-16 w3-center"><i>All high tier packages include features from their lower counterparts</i>
+    </h4>
 
     <div class="w3-row-padding scrollreveal" style="margin:0 -16px">
         <div class="w3-third w3-margin-bottom">
             <ul class="w3-ul w3-white w3-center w3-hover-opacity img-dirt w3-text-white">
                 <li class="w3-dark-grey w3-xlarge w3-padding-32">Dirt Bundle</li>
-                <li class="w3-padding-16">Includes Chat Plugins<br>Command Plugins<br>Utility Plugins<br>Admin Plugins</li>
+                <li class="w3-padding-16">Includes Chat Plugins<br>Command Plugins<br>Utility Plugins<br>Admin Plugins
+                </li>
                 <li class="w3-padding-16">Time span of 1 week + *</li>
                 <li class="w3-padding-16">Small additions range from $5+ *</li>
                 <li class="w3-padding-16">Support for 1 week *</li>
@@ -423,7 +373,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                 </li>
                 <li class="w3-light-grey w3-padding-24">
-                    <a class="w3-button w3-white w3-padding-large w3-hover-black" href="mailto:ryan93@live.com.au?subject=Dirt%20Bundle" target="_blank">Get a Quote *</a>
+                    <a class="w3-button w3-white w3-padding-large w3-hover-black"
+                       href="mailto:ryan93@live.com.au?subject=Dirt%20Bundle" target="_blank">Get a Quote *</a>
                 </li>
             </ul>
         </div>
@@ -431,23 +382,26 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="w3-third">
             <ul class="w3-ul w3-white w3-center w3-hover-opacity img-obsidian w3-text-white">
                 <li class="w3-dark-grey w3-xlarge w3-padding-32">Obsidian Bundle</li>
-                <li class="w3-padding-16">Includes Enchantments<br>Advanced Particles<br>Velocity Interactions<br>NMS</li>
+                <li class="w3-padding-16">Includes Enchantments<br>Advanced Particles<br>Velocity Interactions<br>NMS
+                </li>
                 <li class="w3-padding-16">Time span of 2-3 weeks + *</li>
                 <li class="w3-padding-16">Free Private Repository + Issue tracker *</li>
-                <li class="w3-padding-16">Support for 2 weeks  + Test Server</li>
+                <li class="w3-padding-16">Support for 2 weeks + Test Server</li>
                 <li class="w3-padding-16">
                     <h2> $110-$200</h2>
 
                 </li>
                 <li class="w3-light-grey w3-padding-24">
-                    <a class="w3-button w3-white w3-padding-large w3-hover-black" href="mailto:ryan93@live.com.au?subject=Obsidian%20Bundle" target="_blank">Get a Quote *</a>
+                    <a class="w3-button w3-white w3-padding-large w3-hover-black"
+                       href="mailto:ryan93@live.com.au?subject=Obsidian%20Bundle" target="_blank">Get a Quote *</a>
                 </li>
             </ul>
         </div>
         <div class="w3-third">
             <ul class="w3-ul w3-white w3-center w3-hover-opacity img-end w3-text-white">
                 <li class="w3-dark-grey w3-xlarge w3-padding-32">End Bundle</li>
-                <li class="w3-padding-16">Includes Complex NMS<br>Minigames<br>Cores<br>Complex Velocity Interactions</li>
+                <li class="w3-padding-16">Includes Complex NMS<br>Minigames<br>Cores<br>Complex Velocity Interactions
+                </li>
                 <li class="w3-padding-16">Time span of 1-2 months</li>
                 <li class="w3-padding-16">Provide Bungee & Bukkit tie in</li>
                 <li class="w3-padding-16">Support for One month+</li>
@@ -457,7 +411,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </li>
                 <li class="w3-light-grey w3-padding-24">
                     <!--<button class="w3-button w3-white w3-padding-large w3-hover-black" data-remodal-target="modal" onclick="onPurchaseClick('End Bundle');">Get a Quote*</button>-->
-                    <a class="w3-button w3-white w3-padding-large w3-hover-black" href="mailto:ryan93@live.com.au?subject=End%20Bundle" target="_blank">Get a Quote *</a>
+                    <a class="w3-button w3-white w3-padding-large w3-hover-black"
+                       href="mailto:ryan93@live.com.au?subject=End%20Bundle" target="_blank">Get a Quote *</a>
                 </li>
             </ul>
         </div>
@@ -475,26 +430,30 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <div class="remodal" data-remodal-id="modal">
     <button data-remodal-action="close" class="remodal-close"></button>
     <form method="post" action="">
-    <h3 id="modal-title">Contact</h3>
+        <h3 id="modal-title">Contact</h3>
         <span class="error"><?php echo $completion;?></span>
         <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-          </div>
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-          </div>
+            <div class="w3-half">
+                <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+                <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
         </div>
         <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
 
 
-    <br>
-    <button data-remodal-action="cancel" class="w3-button w3-light-grey w3-padding-large w3-section w3-hover-red"><i class="fa fa-times"></i><br>Cancel</button>
-    <button class="w3-button w3-light-grey w3-padding-large w3-section w3-hover-green" type="submit"><i class="fa fa-paper-plane"></i><br>SEND</button>
+        <br>
+        <button data-remodal-action="cancel" class="w3-button w3-light-grey w3-padding-large w3-section w3-hover-red"><i
+                class="fa fa-times"></i><br>Cancel
+        </button>
+        <button class="w3-button w3-light-grey w3-padding-large w3-section w3-hover-green" type="submit"><i
+                class="fa fa-paper-plane"></i><br>SEND
+        </button>
     </form>
 </div>
 <script>
-    function onPurchaseClick(string){
+    function onPurchaseClick(string) {
         $('#modal-title').html(string);
 
     }
@@ -504,64 +463,73 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <div class="w3-xlarge w3-section">
-    <h6>Made with elegance by Ryan Samarakoon</h6>
-  </div>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-  <script type="text/javascript" src="https://counter6.freecounter.ovh/private/counter.js?c=s27sg36l8lehhze3t5j56uxbqalgwkpn&down=async" async></script><noscript><a href="https://www.freecounterstat.com" title="free website hit counters"><img src="https://counter6.freecounter.ovh/private/freecounterstat.php?c=s27sg36l8lehhze3t5j56uxbqalgwkpn" border="0" title="free website hit counters" alt="free website hit counters"></a></noscript>
+    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <div class="w3-xlarge w3-section">
+        <h6>Made with elegance by Ryan Samarakoon</h6>
+    </div>
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
+                     class="w3-hover-text-green">w3.css</a></p>
+    <script type="text/javascript"
+            src="https://counter6.freecounter.ovh/private/counter.js?c=s27sg36l8lehhze3t5j56uxbqalgwkpn&down=async"
+            async></script>
+    <noscript><a href="https://www.freecounterstat.com" title="free website hit counters"><img
+            src="https://counter6.freecounter.ovh/private/freecounterstat.php?c=s27sg36l8lehhze3t5j56uxbqalgwkpn"
+            border="0" title="free website hit counters" alt="free website hit counters"></a></noscript>
 </footer>
 
 <!-- Add Google Maps -->
 <script>
 
 
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
-// Change style of navbar on scroll
-
-window.onscroll = function() {myFunction(),doAnimation()};
-function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card-2" + " w3-animate-top" + " w3-white"+" w3-text-grey";
-    } else {
-        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "")+" w3-text-light-grey";
+    // Modal Image Gallery
+    function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
     }
-}
-function doAnimation(){
-	var query = $('img');
-	var isVisible = query.is(':visible');
 
-	if (isVisible === true) {
-   // element is Visible
-   //console.log("visible home")
-   //query.addClass("w3-spin");
+    // Change style of navbar on scroll
 
-} else {
- // query.removeClass("w3-spin");
-}
+    window.onscroll = function () {
+        myFunction(), doAnimation()
+    };
 
-}
-
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
+    function myFunction() {
+        var navbar = document.getElementById("myNavbar");
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            navbar.className = "w3-bar" + " w3-card-2" + " w3-animate-top" + " w3-white" + " w3-text-grey";
+        } else {
+            navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "") + " w3-text-light-grey";
+        }
     }
-}
+
+    function doAnimation() {
+        var query = $('img');
+        var isVisible = query.is(':visible');
+
+        if (isVisible === true) {
+            // element is Visible
+            //console.log("visible home")
+            //query.addClass("w3-spin");
+
+        } else {
+            // query.removeClass("w3-spin");
+        }
+
+    }
+
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function toggleFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
 
 </script>
-
 
 
 <!--Start Remodal-->
@@ -569,20 +537,14 @@ function toggleFunction() {
 <!--Start Scroll Revel-->
 <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 <script type="text/javascript">
-	$(document).ready(function(){
-		window.sr = ScrollReveal();
-sr.reveal('.scrollreveal', { duration: 1000 });
+    $(document).ready(function () {
+        window.sr = ScrollReveal();
+        sr.reveal('.scrollreveal', {duration: 1000});
 
 
-
-	});
+    });
 
 </script>
-
-
-
-
-
 
 
 </body>

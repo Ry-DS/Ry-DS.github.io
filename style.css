@@ -1,4 +1,7 @@
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Lato", sans-serif;
+}
+
 body, html {
     height: 100%;
     color: #777;
@@ -6,9 +9,9 @@ body, html {
 }
 
 /* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4,.img-dirt,.img-obsidian,.img-end{
-       background: no-repeat fixed center;
-       background-size: cover;
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .img-dirt, .img-obsidian, .img-end {
+    background: no-repeat fixed center;
+    background-size: cover;
 }
 
 /* First image (Logo. Full height) */
@@ -16,7 +19,6 @@ body, html {
     background-image: url("img/parallax1.jpg");
     min-height: 100%;
 }
-
 
 /* Second image (Portfolio) */
 .bgimg-2 {
@@ -29,31 +31,36 @@ body, html {
     background-image: url("img/parallax3.jpg");
     min-height: 400px;
 }
-.bgimg-4{
+
+.bgimg-4 {
     background-image: url("img/parallax4.jpg");
     min-height: 400px;
 
 }
-.img-dirt{
+
+.img-dirt {
     background-image: url("img/dirt.jpg");
     min-height: 100%;
 }
-.img-obsidian{
+
+.img-obsidian {
     background-image: url("img/obsidian.jpg");
 }
-.img-end{
+
+.img-end {
     background-image: url("img/end.png");
 
 }
+
 .name {
     color: Crimson;
 }
-.color-bar{
+
+.color-bar {
     color: Gray;
 }
 
-
-.scrollreveal{
+.scrollreveal {
     visibility: hidden;
 }
 
