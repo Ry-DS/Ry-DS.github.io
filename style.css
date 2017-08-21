@@ -60,9 +60,6 @@ body, html {
     color: Gray;
 }
 
-.scrollreveal {
-    visibility: hidden;
-}
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
