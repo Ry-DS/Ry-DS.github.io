@@ -23,6 +23,7 @@
     <!--Utils-->
     <script type="text/javascript" src="js/text-rotator.js"></script>
     <link rel="stylesheet" type="text/css" href="css/textrotator.min.css"/>
+    <script type="text/javascript" src="js/typed.min.js"></script>
 
     <link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/remodal.min.css"/>
@@ -72,7 +73,7 @@
     </div>
     <div class="w3-display-middle w3-hide-medium w3-hide-small" style="white-space:nowrap;">
     <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity color-animate">
-    Enlighting the world with <span class="color-animate">Simply <span class="rotate2">Excellent, Cheap, Fast, Diverse, Ballistic</span></span> Services</span>
+    Enlighting the world with <span class="color-animate rotate-typed"></span>Services</span>
     </div>
 
 </div>
@@ -504,6 +505,25 @@
 <script src="js/wow.js"></script>
 <script>
     new WOW().init();
+</script>
+<!--Typed-->
+<script>
+    var options = {
+        strings: ["Simply Fast", "Simply Cheap","Simply Diverse","Simply Excellent","Simply Ballistic"],
+        typeSpeed: 100,
+        backSpeed: 40,
+        startDelay: 1000,
+        backDelay: 1500,
+        autoInsertCss: true,
+        loop: true,
+        loopCount: Infinity,
+
+        smartBackspace: true
+    }
+
+    var typed = new Typed(".rotate-typed", options);
+
+
 </script>
 <!--start analytics-->
 <script>
