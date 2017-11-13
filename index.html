@@ -104,13 +104,16 @@
                 of players on a large server always seemed to entertain me. I have also got into Android
                 development where I have worked with FireBase and MySQL in order to make small note and chat apps.
                 <br>
-                After mastering Java, I decided to go and expand my toolbelt. This involved giving websites a try. I
+                After learning to confidently use Java, I decided to go and expand my toolbelt. This involved giving websites a try. I
                 have started a few months ago and I am confident to say I got the hang of it! This is one of the few
                 websites I've made with my knowledge of HTML and CSS (with a lot of JS). If you need a website
-                designed, a small utility in Java or even a simple photo edit, I got it covered! <a href="#contact"
-                                                                                                    title="contact"
-                                                                                                    class="w3-hover-opacity">Contact
-                    me</a> down below.
+                designed, a small utility in Java or even a simple photo edit, I got it covered! For website, logos and a whole other range of services,
+                You could also give
+                <a href="http://magnus-designs.tech" title="Magnus" class="w3-hover-opacity">Magnus Designs</a> a try.
+
+                <p><a href="#contact"
+                   title="Contact Me"
+                      class="w3-hover-opacity">Contact me</a> down below.</p>
 
             </p>
         </div>
@@ -205,6 +208,36 @@
 
     </div>
     <h3 class="w3-center">You can check out these and more on my GitHub</h3>
+
+
+</div>
+<!-- Another grey sector for previous clients -->
+<div class="w3-row w3-center w3-dark-grey w3-padding-16"><br>
+        <span class="w3-xlarge w3-text-white w3-wide w3-padding-24">PREVIOUS CLIENTS</span>
+    <div class="w3-row-padding w3-center w3-section w3-padding-24">
+
+        <img src="img/clients/classicbites.png" style="width: 250px;height: 50px" class="blackandwhite wow fadeIn" alt="Classic Bites"/><br>
+        <b class="w3-center w3-text w3-text-white w3-hover-opacity w3-wide wow fadeIn">- Classic Bites -</b><br>
+        <span class="w3-wide w3-text w3-center w3-text-white w3-small wow fadeIn">Logo production by <a href="http://magnus-designs.tech">Magnus Designs</a></span>
+    </div>
+    <div class="w3-row-padding w3-center w3-section">
+
+        <a href="http://pokefind.co" target="_blank"><img src="img/clients/pokefind.png" style="width: 100px;height: 100px" class="blackandwhite wow fadeIn" alt="PokeFind"/><br></a>
+        <b class="w3-center w3-text w3-text-white w3-hover-opacity w3-wide wow fadeIn">- PokeFind -</b><br>
+        <span class="w3-wide w3-text w3-center w3-text-white w3-small wow fadeIn">Java Server Development</span>
+    </div>
+    <div class="w3-row-padding w3-center w3-section">
+
+        <a href="https://www.differentcraft.net/" target="_blank"><img src="img/clients/differentcraft.jpg" style="width: 100px;height: 100px" class="blackandwhite wow fadeIn" alt="DifferentCraft"/></a><br>
+        <b class="w3-center w3-text w3-text-white w3-hover-opacity w3-wide wow fadeIn">- Different Craft -</b><br>
+        <span class="w3-wide w3-text w3-center w3-text-white w3-small wow fadeIn">Java Server Development</span>
+    </div>
+    <div class="w3-row-padding w3-center w3-section">
+
+        <a href="http://www.disorbs.net" target="_blank"><img src="img/clients/disorbs.jpg" style="width: 100px;height: 100px" class="blackandwhite wow fadeIn" alt="Disorbs Network"/></a><br>
+        <b class="w3-center w3-text w3-text-white w3-hover-opacity w3-wide wow fadeIn">- Disorbs Network -</b><br>
+        <span class="w3-wide w3-text w3-center w3-text-white w3-small wow fadeIn">Java Server Development</span>
+    </div>
 
 
 </div>
@@ -463,6 +496,10 @@
         document.getElementById("img01").src = element.src;
         document.getElementById("modal01").style.display = "block";
         var captionText = document.getElementById("caption");
+        console.log(element.alt.indexOf("Magnus"));
+        if(element.alt.indexOf("Magnus")!==-1)
+            captionText.innerHTML="Logo produced by <a href='http://magnus-designs.tech'>Magnus Designs</a>";
+        else
         captionText.innerHTML = element.alt;
     }
 

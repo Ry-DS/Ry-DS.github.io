@@ -14,6 +14,16 @@ body, html {
     background-size: cover;
 }
 
+.blackandwhite{
+    transition: filter .5s ease-in-out;
+    -webkit-filter: grayscale(80%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+    filter: grayscale(80%); /* FF 35+ */
+}
+.blackandwhite:hover{
+    transition: filter .5s ease-in-out;
+    -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+    filter: grayscale(0%); /* FF 35+ */
+}
 /* First image (Logo. Full height) */
 .bgimg-1 {
     background-image: url("img/parallax1.jpg");
