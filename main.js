@@ -43,21 +43,25 @@ $(document).ready(function () {
     });
 
     window.setInterval(changeColor, 1250);
+
+
+});
+window.onload = (e) => {
+    console.log("loading gifs...");
     //loading gifs after so they don't lag page
     for (let i = 1; i <= 6; i++) {
         document.getElementById("gif" + i).src = "img/gif/" + i + ".gif";
     }
-
-});
+};
 /*
                 Copyright Ryan Samarakoon
                 https://simplyballistic.github.io
                 You care welcome to use this color changer if you retain this licence
              */
-var color = 0;
+let color = 0;
 
 function changeColor() {
-    var colorString = "#ff9800";
+    let colorString = "#ff9800";
     switch (color) {
         case 0:
             //cyan
