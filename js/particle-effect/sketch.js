@@ -55,10 +55,10 @@ function draw() {
 }
 function mouseMoved(){
     drawParticles(mouseX,mouseY);
-}
+}/*
 function touchMoved(){
     return false;
-}
+}*/
 function drawParticles(x,y){
     for (let i = 0; i < 2; i++) {
         particles.push(new Particle(x,y));

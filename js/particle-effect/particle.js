@@ -4,7 +4,7 @@
 
  This project is protect under the MIT License
  https://opensource.org/licenses/MIT
- 
+
  */
 const RANDOM_SETS=[[2,2,100],[2,5,2],[100,2,1],[1,4,3]];
 class Particle{
