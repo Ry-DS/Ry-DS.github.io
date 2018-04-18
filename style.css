@@ -27,7 +27,8 @@ body, html {
 /* First image (Logo. Full height) */
 .bgimg-1 {
     background-image: url("img/parallax1.jpg");
-    min-height: 100%;
+    min-height: 99%;
+    max-height: 99%;
 }
 
 /* Second image (Portfolio) */
