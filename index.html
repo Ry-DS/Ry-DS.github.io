@@ -13,9 +13,7 @@
 
     <meta charset="utf-8">
     <title>Ryan Samarakoon</title>
-    <script src="js/p5.js"></script>
-    <script src="js/particle-effect/sketch.js"></script>
-    <script src="js/particle-effect/particle.js"></script>
+
     <script src="https://www.google.com/jsapi" type="text/javascript"></script>
 
     <script
@@ -40,8 +38,10 @@
     <link rel="stylesheet" type="text/css" href="style.min.css">
 
 
-    <script src="main.min.js"></script>
-
+    <script src="main.js"></script>
+    <script src="js/p5.min.js"></script>
+    <script src="js/particle-effect/sketch.js"></script>
+    <script src="js/particle-effect/particle.js"></script>
 
 
 </head>
@@ -177,21 +177,21 @@
     <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
     <div class="w3-row-padding w3-center ">
         <div class="w3-col m3 w3-hide-small">
-            <img src="img/gif/1.gif" style="width:100%"
+            <img id="gif1" src="" style="width:100%"
                  onclick="onClick(this)" class="w3-hover-opacity wow flipInX" alt="Enderman like Teleport">
         </div>
 
         <div class="w3-col m3">
-            <img src="img/gif/2.gif" style="width:100%"
+            <img id="gif2" src="" style="width:100%"
                  onclick="onClick(this)" class="w3-hover-opacity wow flipInX" alt="Flying Cars">
         </div>
 
         <div class="w3-col m3 w3-hide-small">
-            <img src="img/gif/3.gif" style="width:100%"
+            <img id="gif3" src="" style="width:100%"
                  onclick="onClick(this)" class="w3-hover-opacity wow flipInX" alt="Spells">
         </div>
         <div class="w3-col m3 w3-hide-small">
-            <img src="img/gif/4.gif"
+            <img id="gif4" src=""
                  style="width:100%" onclick="onClick(this)" class="w3-hover-opacity wow flipInX"
                  alt="ProBleed: Resource on Spigot">
         </div>
@@ -201,13 +201,13 @@
 
     <div class="w3-row-padding w3-center w3-section">
         <div class="w3-col m3">
-            <img src="img/gif/5.gif" style="width:100%"
+            <img id="gif5" src="" style="width:100%"
                  onclick="onClick(this)" class="w3-hover-opacity wow flipInX"
                  alt="HIIDE: Android game releasing on December 31st">
         </div>
 
         <div class="w3-col m3">
-            <img src="img/gif/6.gif" style="width:100%"
+            <img id="gif6" src="" style="width:100%"
                  onclick="onClick(this)" class="w3-hover-opacity wow flipInX" alt="Enfinity: A 3D space game">
         </div>
 

@@ -43,6 +43,11 @@ $(document).ready(function () {
     });
 
     window.setInterval(changeColor, 1250);
+    //loading gifs after so they don't lag page
+    for (let i = 1; i <= 6; i++) {
+        document.getElementById("gif" + i).src = "img/gif/" + i + ".gif";
+    }
+
 });
 /*
                 Copyright Ryan Samarakoon
