@@ -51,7 +51,13 @@ window.onload = (e) => {
     //loading gifs after so they don't lag page
     for (let i = 1; i <= 6; i++) {
         document.getElementById("gif" + i).src = "img/gif/" + i + ".gif";
+
     }
+    for (let i = 1; i <= 3; i++) {
+
+        document.getElementById("sec" + i).classList.add("bgimg-" + (i + 1));
+    }
+
 };
 /*
                 Copyright Ryan Samarakoon
