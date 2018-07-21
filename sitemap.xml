@@ -1,21 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
-        xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-    <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-    <url>
-        <loc>http://ryan-s.me/</loc>
-        <lastmod>2017-08-29T01:17:51+00:00</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>1.00</priority>
-    </url>
-    <url>
-        <loc>http://ryan-s.me/resume.docx</loc>
-        <lastmod>2017-08-29T01:17:51+00:00</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.80</priority>
-    </url>
+
+<url>
+  <loc>http://ryan-s.me/</loc>
+  <lastmod>2018-05-16T01:36:18+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://ryan-s.me/js-projects/index.html</loc>
+  <lastmod>2018-05-15T08:30:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://ryan-s.me/js-projects/js/src/index.html</loc>
+  <lastmod>2018-05-15T08:30:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://ryan-s.me/js-projects/flappy-js/src/index.html</loc>
+  <lastmod>2018-05-15T08:30:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://ryan-s.me/js-projects/circle-packing/src/index.html</loc>
+  <lastmod>2018-05-15T08:30:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://ryan-s.me/js-projects/particle-js/src/index.html</loc>
+  <lastmod>2018-05-15T08:30:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://ryan-s.me/js-projects/snake-js/src/index.html</loc>
+  <lastmod>2018-05-15T08:30:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://ryan-s.me/js-projects/water-rippels/src/index.html</loc>
+  <lastmod>2018-05-15T08:30:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
 </urlset>
