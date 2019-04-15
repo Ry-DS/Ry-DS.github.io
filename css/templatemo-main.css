@@ -138,6 +138,11 @@ a:hover { color: #FF0; }
   font-weight: 700;
   text-decoration: none;
   letter-spacing: 0.5px;
+  transition: all 0.5s;
+}
+.primary-button a:hover{
+  background-color: #df6c20;
+  
 }
 
 

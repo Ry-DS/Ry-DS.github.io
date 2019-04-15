@@ -25,12 +25,12 @@ $(document).ready(function(){
   });
   //typed.js
   var typedOptions = {
-    strings: ["Hi!","My name's Ryan","I'm a developer"],
+    strings: ["build websites","make games","take photos","edit media","make web-apps"],
     typeSpeed: 40,
-    backSpeed: 100,
+    backSpeed: 40,
     startDelay: 1000,
-    backDelay: 500,
-    loop: false,
+    backDelay: 1000,
+    loop: true,
     loopCount: Infinity,
     smartBackspace: true
 };
