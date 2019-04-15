@@ -445,22 +445,20 @@ footer {
   padding: 70px 0px;
 }
 
-footer .primary-button {
-  margin-bottom: 30px;
-}
 
-footer ul {
+.social-list {
   padding: 0px;
   margin: 0px;
+  margin-top: 30px;
   list-style: none;
 }
 
-footer ul li {
+.social-list > li {
   display: inline-block;
   margin: 0px 4px;
 }
 
-footer ul li a {
+.social-list > li > a {
   width: 40px;
   height: 40px;
   line-height: 40px;
@@ -474,7 +472,7 @@ footer ul li a {
   font-size: 17px;
 }
 
-footer ul li a:hover {
+.social-list > li > a:hover {
   color: #282b2f;
   background-color: #ff8e43;
 }

@@ -24,7 +24,7 @@ $(document).ready(function(){
     });
   });
   //typed.js
-  var options = {
+  var typedOptions = {
     strings: ["Hi!","My name's Ryan","I'm a developer"],
     typeSpeed: 40,
     backSpeed: 100,
@@ -34,4 +34,4 @@ $(document).ready(function(){
     loopCount: Infinity,
     smartBackspace: true
 };
-var typed = new Typed("#name", options);
+new Typed("#name", typedOptions);
