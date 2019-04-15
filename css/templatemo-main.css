@@ -149,8 +149,9 @@ a:hover { color: #FF0; }
 
 
 .baner-content {
-  padding-top: 30vh;
+  padding-top: 40vh;
   text-align: center;
+  
   background-image: url(../img/1st-section.jpg);
 }
 
@@ -176,6 +177,7 @@ a:hover { color: #FF0; }
   font-weight: 300;
   font-size: 48px;
   color: #fff;
+  
 }
 
 .baner-content .primary-button {
