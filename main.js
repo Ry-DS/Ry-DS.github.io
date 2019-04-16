@@ -23,6 +23,8 @@ $(document).ready(function(){
       } // End if
     });
   });
+  //animate on scroll
+  AOS.init();
   //typed.js
   var typedOptions = {
     strings: ["build websites","make games","take photos","edit media","make web-apps"],
@@ -35,3 +37,5 @@ $(document).ready(function(){
     smartBackspace: true
 };
 new Typed("#name", typedOptions);
+
+
