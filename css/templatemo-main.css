@@ -547,7 +547,8 @@ footer em {
     display: none;
   }
   .insta-mobile{
-    margin-top: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px; 
   }
 
   .about-content .service-item {
@@ -563,6 +564,10 @@ footer em {
 @media (min-width: 767px), (width: 767px) {
   .insta-mobile{
     display: none;
+  }
+  .insta{
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 
 }
