@@ -40,21 +40,29 @@ jQuery(document).ready(function($) {
         $(target).show();
       
     })
-
-    var owl = $("#owl-testimonials");
-
-      owl.owlCarousel({
+    
+    let options={
         
         pagination : true,
         paginationNumbers: false,
         autoPlay: 6000, //Set AutoPlay to 3 seconds
-        items : 3, //10 items above 1000px browser width
+        items : 8, //10 items above 1000px browser width
         itemsDesktop : [1000,3], //5 items between 1000px and 901px
         itemsDesktopSmall : [900,2], // betweem 900px and 601px
         itemsTablet: [600,1], //2 items between 600 and 0
         itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
         
+    };
+
+    $('.owl-carousel').each((i,item)=>{
+        console.log($(item));
+        $(item).owlCarousel(options);
     });
+
+
+
+    
+    
 
 
 });
@@ -97,3 +105,16 @@ var typedOptions = {
     smartBackspace: true
 };
 new Typed("#name", typedOptions);
+let portfolio = $('.portfolio-items');
+//Portfolio display
+$('.portfolio-filters > li > a').on('click', function (e) {
+    e.preventDefault();
+    let groupName = $(this).attr('data-group');
+    $('.portfolio-filters > li > a').removeClass('active');
+    $(this).addClass('active');
+    portfolio.shuffle('shuffle', groupName );
+});
+let shuffleInstance = new Shuffle(document.querySelector('.portfolio-items'), {
+    itemSelector: 'li'
+});
+console.log(shuffleInstance);
