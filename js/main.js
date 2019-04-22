@@ -105,16 +105,15 @@ var typedOptions = {
     smartBackspace: true
 };
 new Typed("#name", typedOptions);
-let portfolio = $('.portfolio-items');
+let portfolio = new Shuffle(document.querySelector('.portfolio-items'), {
+    itemSelector: 'li'
+});
 //Portfolio display
 $('.portfolio-filters > li > a').on('click', function (e) {
     e.preventDefault();
     let groupName = $(this).attr('data-group');
     $('.portfolio-filters > li > a').removeClass('active');
     $(this).addClass('active');
-    portfolio.shuffle('shuffle', groupName );
+    portfolio.filter(groupName);
 });
-let shuffleInstance = new Shuffle(document.querySelector('.portfolio-items'), {
-    itemSelector: 'li'
-});
-console.log(shuffleInstance);
+

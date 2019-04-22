@@ -324,7 +324,7 @@ h4::after {
 }
 .portfolio-items li{
   display: block;
-  background-color: gray;
+  background-color: transparent;
   width: 100%;
   max-width: 200px;
   text-align: center;
