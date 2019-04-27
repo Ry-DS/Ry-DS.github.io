@@ -38,8 +38,8 @@ jQuery(document).ready(function($) {
         $this.addClass('active');
         $(tabgroup).children('div').hide();
         $(target).show();
-      
-    })
+
+        });
     
     let options={
         
@@ -116,3 +116,8 @@ $('.portfolio-filters > li > a').on('click', function (e) {
     $(this).addClass('active');
     portfolio.filter(groupName);
 });
+for (let i = 1; i <= 8; i++) {
+    $('#popup-' + i).iziModal();
+
+
+}
