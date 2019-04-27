@@ -116,4 +116,3 @@ $('.portfolio-filters > li > a').on('click', function (e) {
     $(this).addClass('active');
     portfolio.filter(groupName);
 });
-
