@@ -167,11 +167,14 @@
                                 <!--project popup description-->
                                 <div>
                                     <p>
-                                        Project undertaken by Magnus Designs, an old business venture.
+                                        Classic Bites was a client who requested a logo from our (now closed) Magnus
+                                        Designs service. The product was the above logo.
                                     </p></div>
                                 <div class="bottom-button-bar">
-                                    <a>Hey</a>
-                                    <a>Hi</a>
+                                    <a href="https://www.facebook.com/ClassicBitesPvtLtd/"><i class="fas fa-globe"></i>
+                                        Visit Client Page</a>
+                                    <a onclick="$('#popup-1').iziModal('close');$('#popup-8').iziModal('open');"><i
+                                            class="fas fa-arrow-right"></i> Jump to Magnus Designs</a>
                                 </div>
 
                             </div>
@@ -185,23 +188,25 @@
                         <div class="overlay">
                             <a class="view-project" onclick="$('#popup-2').iziModal('open')">Learn More</a>
                         </div>
-                        <div id='popup-2' class="iziModal" data-izimodal-title="Welcome" data-izimodal-group="portfolio">
+                        <div class="iziModal" data-izimodal-group="portfolio" data-izimodal-title="Different Craft"
+                             id='popup-2'>
                             <figure>
 
-                                <!--project popup image-->
                                 <img alt class="modal-image" src='img/Old/clients/differentcraft.jpg'>
 
                             </figure>
                             <div class='content'>
 
-                                <!--project popup title-->
                                 <h4>Different Craft</h4>
 
-                                <!--project popup description-->
                                 <p>
                                     I have helped develop several server elements for the server DifferentCraft
                                     including enchants and menus.
                                 </p>
+                                <div class="bottom-button-bar">
+                                    <a href="https://differentcraft.net/" style="grid-column: 1/3"><i
+                                            class="fas fa-globe"></i> Visit Company Page</a>
+                                </div>
 
                             </div>
 
@@ -218,22 +223,22 @@
                         <div id='popup-3' class="iziModal" data-izimodal-title="Disorbs" data-izimodal-group="portfolio">
                             <figure>
 
-                                <!--project popup image-->
                                 <img alt class="modal-image" src='img/Old/clients/disorbs.jpg'>
 
                             </figure>
                             <div class='content'>
 
-                                <!--project popup title-->
                                 <h4>Disorbs</h4>
 
-                                <!--project popup description-->
                                 <p>
                                     Projects included:
                                     - Bot prevention menu
                                     - Vehicle Introductions
                                 </p>
-
+                                <div class="bottom-button-bar">
+                                    <a href="https://www.disorbs.net/" style="grid-column: 1/3"><i
+                                            class="fas fa-globe"></i> Visit Company Page</a>
+                                </div>
                             </div>
 
                         </div>
@@ -244,15 +249,62 @@
 
                         <img src='img/Old/clients/pokefind.png' style="width: 125px" >
                         <div class="overlay">
-                            <a class="view-project">Learn More</a>
+                            <a class="view-project" onclick="$('#popup-4').iziModal('open')">Learn More</a>
                         </div>
+                        <div class="iziModal" data-izimodal-group="portfolio" data-izimodal-title="PokéFind"
+                             id='popup-4'>
+                            <figure>
+
+                                <img alt class="modal-image" src='img/Old/clients/pokefind.png'>
+
+                            </figure>
+                            <div class='content'>
+
+                                <h4>PokéFind</h4>
+
+                                <p>
+                                    Projects included:
+                                    - Bot prevention menu
+                                    - Vehicle Introductions
+                                </p>
+                                <div class="bottom-button-bar">
+                                    <a href="https://pokefind.co" style="grid-column: 1/3"><i class="fas fa-globe"></i>
+                                        Visit Company Page</a>
+                                </div>
+                            </div>
+
+                        </div>
+
 
                     </li>
                     <li data-groups='["games"]' >
 
                         <img src='img/Old/gif/5.gif'>
                         <div class="overlay">
-                            <a class="view-project">Learn More</a>
+                            <a class="view-project" onclick="$('#popup-5').iziModal('open')">Learn More</a>
+                        </div>
+                        <div class="iziModal" data-izimodal-group="portfolio" data-izimodal-title="Project Top Down"
+                             id='popup-5'>
+                            <figure>
+
+                                <img alt class="modal-image" src='img/Old/gif/5.gif'>
+
+                            </figure>
+                            <div class='content'>
+
+                                <h4>Project Top Down</h4>
+
+                                <p>
+                                    Projects included:
+                                    - Bot prevention menu
+                                    - Vehicle Introductions
+                                </p>
+                                <div class="bottom-button-bar">
+                                    <a href="https://github.com/BoxCubed/ProjectTopDOWN" style="grid-column: 1/3"><i
+                                            class="fab fa-github"></i> Visit GitHub Page</a>
+                                </div>
+                            </div>
+
                         </div>
 
                     </li>
@@ -260,7 +312,30 @@
 
                         <img src='img/Old/gif/6.gif'>
                         <div class="overlay">
-                            <a class="view-project">Learn More</a>
+                            <a class="view-project" onclick="$('#popup-6').iziModal('open')">Learn More</a>
+                        </div>
+                        <div class="iziModal" data-izimodal-group="portfolio" data-izimodal-title="Enfinity"
+                             id='popup-6'>
+                            <figure>
+
+                                <img alt class="modal-image" src='img/Old/gif/6.gif'>
+
+                            </figure>
+                            <div class='content'>
+
+                                <h4>Enfinity</h4>
+
+                                <p>
+                                    Projects included:
+                                    - Bot prevention menu
+                                    - Vehicle Introductions
+                                </p>
+                                <div class="bottom-button-bar">
+                                    <a href="https://github.com/BoxCubed/Enfinity" style="grid-column: 1/3"><i
+                                            class="fab fa-github"></i> Visit GitHub Page</a>
+                                </div>
+                            </div>
+
                         </div>
 
                     </li>
@@ -268,7 +343,74 @@
 
                         <img src='img/robot-website.gif'>
                         <div class="overlay">
-                            <a class="view-project">Learn More</a>
+                            <a class="view-project" onclick="$('#popup-7').iziModal('open')">Learn More</a>
+                        </div>
+                        <div class="iziModal" data-izimodal-group="portfolio"
+                             data-izimodal-title="Reliance on Technology Informative Website" id='popup-7'>
+                            <figure>
+
+                                <!--project popup image-->
+                                <img alt class="modal-image" src='img/robot-website.gif'>
+
+                            </figure>
+                            <div class='content'>
+
+                                <!--project popup title-->
+                                <h4>Reliance on Technology Informative Website</h4>
+
+                                <!--project popup description-->
+                                <div>
+                                    <p>
+                                        Classic Bites was a client who requested a logo from our (now closed) Magnus
+                                        Designs service. The product was the above logo.
+                                    </p></div>
+                                <div class="bottom-button-bar">
+                                    <a href="http://ryan-s.me/Reliance-Technology-Info-Website/"><i
+                                            class="fas fa-globe"></i> Visit Page</a>
+                                    <a href="https://github.com/SimplyBallistic/Reliance-Technology-Info-Website"><i
+                                            class="fab fa-github"></i> Visit GitHub Page</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </li>
+                    <li data-groups='["websites"]'>
+
+                        <img src='img/magnus.gif'>
+                        <div class="overlay">
+                            <a class="view-project" onclick="$('#popup-8').iziModal('open')">Learn More</a>
+                        </div>
+                        <div class="iziModal" data-izimodal-group="portfolio" data-izimodal-title="Magnus Designs"
+                             id='popup-8'>
+                            <figure>
+
+                                <!--project popup image-->
+                                <img alt class="modal-image" src='img/magnus.gif'>
+
+                            </figure>
+                            <div class='content'>
+
+                                <!--project popup title-->
+                                <h4>Magnus Designs</h4>
+
+                                <!--project popup description-->
+                                <div>
+                                    <p>
+                                        Classic Bites was a client who requested a logo from our (now closed) Magnus
+                                        Designs service. The product was the above logo.
+                                    </p></div>
+                                <div class="bottom-button-bar">
+                                    <a href="https://thedevlegend27.github.io"><i class="fas fa-globe"></i> Visit
+                                        Page</a>
+                                    <a href="https://github.com/thedevLEGEND27/thedevLEGEND27.github.io"><i
+                                            class="fab fa-github"></i> Visit GitHub Page</a>
+                                </div>
+
+                            </div>
+
                         </div>
 
 
@@ -277,7 +419,7 @@
 
                         <img src='img/flappy-machine-learning.gif'>
                         <div class="overlay">
-                            <a class="view-project">Learn More</a>
+                            <a class="view-project" onclick="$('#popup-8').iziModal('open')">Learn More</a>
                         </div>
 
                     </li>
