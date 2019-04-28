@@ -350,8 +350,20 @@ h4::after {
   z-index:9;
 }
 .iziModal-content{
-  background: rgb(36, 36, 19);
   padding: 10px !important;
+
+}
+
+.iziModal-header-title {
+    font-weight: bolder !important;
+}
+
+.modal-image {
+    display: block;
+    padding: 10px 20px;
+    margin: 0 auto;
+    max-height: 200px;
+    text-align: center;
 
 }
 .portfolio-items > li > .overlay:before{
