@@ -117,7 +117,8 @@ $('.portfolio-filters > li > a').on('click', function (e) {
     portfolio.filter(groupName);
 });
 for (let i = 1; i <= 8; i++) {
-    $('#popup-' + i).iziModal();
+
+    $('#popup-' + i).iziModal({headerColor: 'rgb(36, 36, 19)',icon: 'fas fa-briefcase'});
 
 
 }
