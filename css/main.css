@@ -521,7 +521,7 @@ h4::after {
 
 .skills-content h2 {
     color: white;
-    font-size: 25px;
+    font-size: 22px;
 }
 
 .skills-content .grid {
@@ -728,7 +728,7 @@ footer em {
 
   .about-content {
     padding-top: 5vh;
-    min-height: 90vh;
+      min-height: 70vh;
     text-align: center;
   }
 
