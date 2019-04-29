@@ -116,7 +116,7 @@ $('.portfolio-filters > li > a').on('click', function (e) {
     $(this).addClass('active');
     portfolio.filter(groupName);
 });
-for (let i = 1; i <= 8; i++) {
+for (let i = 1; i <= $('.portfolio-content > .container > .row > div >  .portfolio-items > li').length; i++) {
 
     $('#popup-' + i).iziModal({headerColor: '#ff7d27', icon: 'fas fa-briefcase', background: 'rgb(36, 36, 19)'});
 

@@ -391,7 +391,7 @@ h4::after {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+  font-size: 1.1em;
     transition: all .3s;
 }
 
