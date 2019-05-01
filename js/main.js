@@ -123,6 +123,8 @@ for (let i = 1; i <= $('.portfolio-content > .container > .row > div >  .portfol
 
 }
 window.onload = () => {
+    $('#portfolio').addClass($('#portfolio').attr('data-class'));
+    $('#contact-us').addClass($('#contact-us').attr('data-class'));
     console.log("Loading Gifs...");
     let numGifs = 0;
 //loading gifs after page load cause they take forever
@@ -133,4 +135,6 @@ window.onload = () => {
         numGifs++;
     });
     console.log("Loaded " + numGifs + " Gifs");
+
+
 };
