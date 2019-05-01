@@ -122,3 +122,15 @@ for (let i = 1; i <= $('.portfolio-content > .container > .row > div >  .portfol
 
 
 }
+window.onload = () => {
+    console.log("Loading Gifs...");
+    let numGifs = 0;
+//loading gifs after page load cause they take forever
+    $('.gif-load').each(function (e) {
+        let img = $(this);
+        let src = img.attr('data-src');
+        img.attr('src', src);
+        numGifs++;
+    });
+    console.log("Loaded " + numGifs + " Gifs");
+};
