@@ -22,7 +22,7 @@ https://templatemo.com/tm-526-vanilla
     content: '\201C';
     position: absolute;
     top: 0.25em;
-    left: 1em;
+    left: 0.5em;
     opacity: 0.1;
     color: #e7e6e4;
     font-size: 6em;
@@ -727,8 +727,16 @@ footer em {
 }
 /*Scaling for mobile*/
 @media (max-width: 767px){
-  
-  .banner-content {
+    .brooks {
+        font-size: 1.7em;
+    }
+
+    .brooks:before {
+        top: 0.2em;
+        left: -0.1em;
+    }
+
+    .banner-content {
     padding-top: 30vh;
   }
 
@@ -804,5 +812,5 @@ footer em {
   .container {
     max-width: 1170px;
   }
- 
+
 }
