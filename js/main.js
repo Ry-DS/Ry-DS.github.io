@@ -116,12 +116,7 @@ $('.portfolio-filters > li > a').on('click', function (e) {
     $(this).addClass('active');
     portfolio.filter(groupName);
 });
-for (let i = 1; i <= $('.portfolio-content > .container > .row > div >  .portfolio-items > li').length; i++) {
 
-    $('#popup-' + i).iziModal({headerColor: '#ff7d27', icon: 'fas fa-briefcase', background: 'rgb(36, 36, 19)'});
-
-
-}
 window.onload = () => {
     $('#portfolio').addClass($('#portfolio').attr('data-class'));
     $('#contact-us').addClass($('#contact-us').attr('data-class'));
@@ -135,6 +130,17 @@ window.onload = () => {
         numGifs++;
     });
     console.log("Loaded " + numGifs + " Gifs");
+    setTimeout(()=>{
+        portfolio.filter();
+        for (let i = 1; i <= $('.portfolio-content > .container > .row > div >  .portfolio-items > li').length; i++) {
+
+            $('#popup-' + i).iziModal({headerColor: '#ff7d27', icon: 'fas fa-briefcase', background: 'rgb(36, 36, 19)'});
+
+
+        }
+
+    },1000)
+
 
 
 };
