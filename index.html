@@ -1,599 +1,765 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-    <!--Icon stuff-->
-
-    <link rel="icon" href="favicon.ico" type="favicon.ico">
-
-    <meta name="theme-color" content="#ffffff">
-    <meta name="google-site-verification" content="hl-vNqqC2Cn3dD2y3kOBsH9QjXiNepoTfqGWlEkLDx8" />
-    <meta name="description" content="My name is Ryan Samarakoon. I offer several development services such as Spigot/Bukkit Plugin Development, Java Development and Website Design."/>
-
-
     <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <title>Ryan Samarakoon</title>
+    <meta content="" name="description">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="apple-touch-icon.png" rel="apple-touch-icon">
 
-    <script src="https://www.google.com/jsapi" type="text/javascript"></script>
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
+    <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/owl/owl.carousel.min.css" rel="stylesheet">
+    <link href="css/owl/owl.theme.green.min.css" rel="stylesheet">
+    <link href="css/iziModal.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet"/>
 
-    <script
-            src="https://code.jquery.com/jquery-3.2.1.min.js"
-    ></script>
-    <script src="js/jquery-color.min.js"></script>
 
-    <!--Utils-->
-    <script type="text/javascript" src="js/text-rotator.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/textrotator.min.css"/>
-    <script type="text/javascript" src="js/typed.min.js"></script>
-
-    <link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
-    <link rel="stylesheet" type="text/css" href="css/remodal.min.css"/>
-    <link rel="stylesheet" type="text/css" href="css/remodal-theme.min.css"/>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="stylesheet" href="css/w3.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="style.min.css">
-
-    <!--My own-->
-    <script src="main.js"></script>
-    <script src="js/p5.min.js"></script>
-    <script src="js/particle-effect/sketch.js"></script>
-    <script src="js/particle-effect/particle.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 
 
 </head>
-
-<div class="w3-top">
-    <div class="w3-bar w3-text-light-grey" id="myNavbar">
-        <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);"
-           onclick="toggleFunction()" title="Toggle Navigation Menu">
-            <i class="fa fa-bars"></i>
-        </a>
-        <a href="#home" class="w3-bar-item w3-button w3-hover-red">HOME</a>
-        <a href="#about" class="w3-bar-item w3-button w3-hide-small"> <i class="fa fa-user"></i> ABOUT</a>
-        <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"> <i class="fa fa-th"></i> PORTFOLIO</a>
-        <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-        <a href="#purchase" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-usd"></i> PURCHASE</a>
-
-
-    </div>
-    <!-- Navbar on small screens -->
-    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-        <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()"> ABOUT</a>
-        <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()"> PORTFOLIO</a>
-        <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()"> CONTACT</a>
-        <a href="#purchase" class="w3-bar-item w3-button" onclick="toggleFunction()"> PURCHASE</a>
-
-    </div>
-</div>
-<!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-    <div id="sketch-holder" class="w3-hide-small"></div>
-    <div class="w3-display-middle w3-hide-large w3-hide-medium" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-xlarge w3-wide w3-animate-opacity w3-text-light-grey">
-    <span class="w3-text-white">Simply <br><span
-            class="rotate4">Excellent, Cheap, Fast, Diverse, Ballistic</span><br></span>Services</span>
-    </div>
-    <div class="w3-display-middle w3-hide-small" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity color-animate">
-    Enlightening the world with <span class="color-animate rotate-typed"></span>Services</span>
-    </div>
-
-</div>
 <body>
-<!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64" id="about">
-    <h3 class="w3-center">Hi There! I'm Ryan Samarakoon</h3>
-    <h4 class="w3-center">A confident and skillful developer</h4>
-    <!-- <h3 class="w3-center">This section isn't done yet!</h3>
-   -->  <!-- <p class="w3-center"><img src="http://www.askawebsite.com/askawebsite.com/gears.gif"></p> -->
 
-    <h5 class="w3-center">I provide many services including Web Development, Java development and Media Production</h5>
-    <div class="w3-row">
-        <div class="w3-col m6 w3-center w3-padding-large">
-            <p><b><i class="fa fa-github w3-margin-right"></i>Click the Image to Visit my Github!</b></p><br>
-            <a href="https://github.com/SimplyBallistic" target="_blank">
-                <img src="https://avatars0.githubusercontent.com/u/25571542?v=3&s=400"
-                     class="w3-round w3-image wow fadeIn" alt="GitHub" width="500" height="333"></a>
+<div class="fixed-side-navbar" id="navbar">
+    <ul class="nav flex-column">
+        <li class="nav-item"><a class="nav-link" href="#home"><span class="fadeIn animated">Home</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#about"><span class="fadeIn animated">About</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#portfolio"><span class="fadeIn animated">Portfolio</span></a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#skills"><span class="fadeIn animated">Skills</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact-us"><span class="fadeIn animated">Contact</span></a>
+        </li>
+    </ul>
+</div>
 
+<div class="parallax-content banner-content" id="home">
+    <div class="container">
+        <div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h1><span style="font-weight: inherit;">Hi! <br>My name is Ryan and <br>I <span
+                            id="name"></span></span></h1>
+                    <div class="line-dec" style="width: 20vw;"></div>
+                </div>
+                <div class="col-md-6">
+                    <div class="primary-button" data-aos="fade-down"><a href="resume.docx"><i
+                            class="fas fa-file-download"></i> Download my Resume</a></div>
+                    <ul class="social-list">
+
+                        <li data-aos="fade-down-right" data-aos-delay="100"><a
+                                href="https://github.com/SimplyBallistic"><i class="fab fa-github"></i></a></li>
+                        <li data-aos="fade-down" data-aos-delay="150"><a
+                                href="https://stackoverflow.com/users/5279269/ballisticblaze"><i
+                                class="fab fa-stack-overflow"></i></a></li>
+                        <li data-aos="fade-down" data-aos-delay="200"><a
+                                href="https://www.linkedin.com/in/ryan-samarakoon-61966314a/"><i
+                                class="fab fa-linkedin-in"></i></a></li>
+                        <li data-aos="fade-down-left" data-aos-delay="250"><a
+                                href="https://codepen.io/SimplyBallistic/"><i class="fab fa-codepen"></i></a></li>
+                        <br><br>
+                        <li data-aos="fade-up-right" data-aos-delay="450"><a
+                                href="https://instagram.com/ryan_s_life/"><i class="fab fa-instagram"></i></a></li>
+                        <li data-aos="fade-up" data-aos-delay="400"><a href="skype:live:ryan93_2?chat"><i
+                                class="fab fa-skype"></i></a></li>
+                        <li data-aos="fade-up" data-aos-delay="350"><a
+                                href="https://www.facebook.com/profile.php?id=100009148351762"><i
+                                class="fab fa-facebook"></i></a></li>
+                        <li data-aos="fade-up-left" data-aos-delay="300"><a
+                                href="mailto:ryan93@live.com.au?Subject=Business%20Inquiry"><i
+                                class="fas fa-envelope"></i></a></li>
+                        <br>
+                    </ul>
+                </div>
+            </div>
         </div>
+    </div>
+</div>
 
-        <!-- Hide this text on small devices -->
-        <div class="w3-col m6 w3-hide-small w3-padding-large">
-            <p>Hey! I am a Java developer with around 4 years of experience and 2 years of experience with the Bukkit
-                API. I first started out as a game developer. You can view several of my projects on Github (click the image above). I built most of them using
-                LibGDX. I got into Bukkit when I realized how fun it is to manipulate a large multiplayer 3D world and
-                have been working with ever since. Manipulation
-                of players on a large server always seemed to entertain me. I have also got into Android
-                development where I have worked with FireBase and MySQL in order to make small note and chat apps.
-                <br>
-                After learning to confidently use Java, I decided to go and expand my toolbelt. This involved giving websites a try. I
-                have started a few months ago and I am confident to say I got the hang of it! This is one of the few
-                websites I've made with my knowledge of HTML and CSS (with a lot of JS). If you need a website
-                designed, a small utility in Java or even a simple photo edit, I got it covered! For website, logos and a whole other range of services,
-                You could also give
-                <a href="http://magnus-designs.tech" title="Magnus" class="w3-hover-opacity">Magnus Designs</a> a try.
 
-                <p><a href="#contact"
-                   title="Contact Me"
-                      class="w3-hover-opacity">Contact me</a> down below.</p>
+<div class="about-content" id="about">
+    <div class="container">
+
+        <div style="text-align: center">
+            <h4 data-aos="zoom-in-down">About me</h4>
+            <blockquote class="brooks" data-aos="fade-in" data-aos-duration="2000">
+                The best way to predict the future is to create it
+            </blockquote>
+
+            <p data-aos="zoom-in" style="text-align: left">
+                Born in Oklahoma, raised in Colombo and living in Melbourne, I am a young developer/photographer who
+                loves
+                to capture the artistry of nature by day, and code the next big thing at 2 o'clock in the morning. I
+                believe every person
+                has a form of creativity within themselves, the trick is to just find it. Ever since the age of 13, I've
+                found my outlet to be the logistical thinking of code, and the art of photography. Throughout my 4 years
+                (and growing!) of
+                experience, I've had my fair share of failure, agony and frustration. Maybe a missed opportunity or a
+                failed ambition just to name a few.
+                But through pure passion and the love of my craft, I've used these experiences to grow as a person. I'm
+                not entirely sure
+                why you ended up here. Maybe it's because you wish to hire me, or maybe I sent you here myself. Whatever
+                that reason may be,
+                I hope you get more out of this visit than just another "look at me!" page. I want you to leave here
+                inspired. Time will always move forward,
+                so push yourself. I have absolutely no clue where I'll be in another 5 or 10 years, but I'm excited.
+                <br>The future is in the making,
+                <br>are you ready?
+
 
             </p>
-        </div>
-    </div>
-    <p class="w3-large w3-center w3-padding-16">My Skills:</p>
-    <p class="w3-wide"><i class="fa fa-code"></i>Java</p>
-    <div class="w3-light-grey">
-        <div class="w3-container w3-padding-small w3-dark-grey w3-center wow slideInLeft" style="width:95%">95%</div>
-    </div>
-    <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
-    <div class="w3-light-grey">
-        <div class="w3-container w3-padding-small w3-dark-grey w3-center wow slideInLeft" style="width:90%">90%</div>
-    </div>
-    <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop/Video Production</p>
-    <div class="w3-light-grey">
-        <div class="w3-container w3-padding-small w3-dark-grey w3-center wow slideInLeft" style="width:75%">75%</div>
-    </div>
-</div>
 
-<div class="w3-row w3-center w3-dark-grey w3-padding-16">
-    <div class="w3-quarter w3-section wow bounceInUp">
-        <span class="w3-xlarge">Free</span><br>
-        Test Server
 
-    </div>
-    <div class="w3-quarter w3-section wow bounceInUp">
-        <span class="w3-xlarge">Private</span><br>
-        Repositories
-    </div>
-    <div class="w3-quarter w3-section wow bounceInUp">
-        <span class="w3-xlarge">20+</span><br>
-        Completed Projects
-    </div>
-    <div class="w3-quarter w3-section wow bounceInUp">
-        <span class="w3-xlarge">400+</span><br>
-        Contributions
-
-    </div>
-</div>
-
-<!-- Second Parallax Image with Portfolio Text -->
-<div class="bgimg-2 w3-display-container w3-opacity-min">
-    <div class="w3-display-middle">
-        <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
-
-    </div>
-</div>
-
-<!-- Container (Portfolio Section) -->
-<div class="w3-content w3-container w3-padding-64" id="portfolio">
-    <h3 class="w3-center">Projects</h3>
-    <p class="w3-center"><em>Here are some of the latest plugins/games I've been working on<br> Click on the images to
-        make them bigger</em></p><br>
-
-    <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-    <div class="w3-row-padding w3-center ">
-        <div class="w3-col m3 w3-hide-small">
-            <img id="gif1" src="" style="width:100%"
-                 onclick="onClick(this)" class="w3-hover-opacity wow flipInX" alt="Enderman like Teleport">
-        </div>
-
-        <div class="w3-col m3">
-            <img id="gif2" src="" style="width:100%"
-                 onclick="onClick(this)" class="w3-hover-opacity wow flipInX" alt="Flying Cars">
-        </div>
-
-        <div class="w3-col m3 w3-hide-small">
-            <img id="gif3" src="" style="width:100%"
-                 onclick="onClick(this)" class="w3-hover-opacity wow flipInX" alt="Spells">
-        </div>
-        <div class="w3-col m3 w3-hide-small">
-            <img id="gif4" src=""
-                 style="width:100%" onclick="onClick(this)" class="w3-hover-opacity wow flipInX"
-                 alt="ProBleed: Resource on Spigot">
         </div>
 
 
     </div>
 
-    <div class="w3-row-padding w3-center w3-section">
-        <div class="w3-col m3">
-            <img id="gif5" src="" style="width:100%"
-                 onclick="onClick(this)" class="w3-hover-opacity wow flipInX"
-                 alt="HIIDE: Android game releasing on December 31st">
-        </div>
+    <div class="container">
+        <!-- LightWidget WIDGET -->
 
-        <div class="w3-col m3">
-            <img id="gif6" src="" style="width:100%"
-                 onclick="onClick(this)" class="w3-hover-opacity wow flipInX" alt="Enfinity: A 3D space game">
-        </div>
-
-
-    </div>
-    <a href="http://ryan-s.me/js-projects/index.html"><i><p class="w3-center">Check out my JS-Projects</p></i></a>
-    <h3 class="w3-center">You can check out these and more on my GitHub</h3>
-
-
-</div>
-<!-- Another grey sector for previous clients -->
-<div class="w3-row w3-center w3-dark-grey w3-padding-16"><br>
-        <span class="w3-xlarge w3-text-white w3-wide w3-padding-24">PREVIOUS CLIENTS</span>
-    <div class="w3-row-padding w3-center w3-section w3-padding-24">
-
-        <img src="img/clients/classicbites.png" style="width: 250px;height: 50px" class="blackandwhite wow fadeIn" alt="Classic Bites"/><br>
-        <b class="w3-center w3-text w3-text-white w3-hover-opacity w3-wide wow fadeIn">- Classic Bites -</b><br>
-        <span class="w3-wide w3-text w3-center w3-text-white w3-small wow fadeIn">Logo production by <a href="http://magnus-designs.tech">Magnus Designs</a></span>
-    </div>
-    <div class="w3-row-padding w3-center w3-section">
-
-        <a href="http://pokefind.co" target="_blank"><img src="img/clients/pokefind.png" style="width: 100px;height: 100px" class="blackandwhite wow fadeIn" alt="PokeFind"/><br></a>
-        <b class="w3-center w3-text w3-text-white w3-hover-opacity w3-wide wow fadeIn">- PokeFind -</b><br>
-        <span class="w3-wide w3-text w3-center w3-text-white w3-small wow fadeIn">Java Server Development</span>
-    </div>
-    <div class="w3-row-padding w3-center w3-section">
-
-        <a href="https://www.differentcraft.net/" target="_blank"><img src="img/clients/differentcraft.jpg" style="width: 100px;height: 100px" class="blackandwhite wow fadeIn" alt="DifferentCraft"/></a><br>
-        <b class="w3-center w3-text w3-text-white w3-hover-opacity w3-wide wow fadeIn">- Different Craft -</b><br>
-        <span class="w3-wide w3-text w3-center w3-text-white w3-small wow fadeIn">Java Server Development</span>
-    </div>
-    <div class="w3-row-padding w3-center w3-section">
-
-        <a href="http://www.disorbs.net" target="_blank"><img src="img/clients/disorbs.jpg" style="width: 100px;height: 100px" class="blackandwhite wow fadeIn" alt="Disorbs Network"/></a><br>
-        <b class="w3-center w3-text w3-text-white w3-hover-opacity w3-wide wow fadeIn">- Disorbs Network -</b><br>
-        <span class="w3-wide w3-text w3-center w3-text-white w3-small wow fadeIn">Java Server Development</span>
+        <iframe src="//lightwidget.com/widgets/803575b768395987a958fbd7b6d991d5.html"
+                allowtransparency="true" class="lightwidget-widget insta" data-aos="flip-down"
+                style="width:100%;border:0;overflow:hidden;margin-top: 30px;margin-bottom: 30px"
+                data-aos-anchor-placement="center-bottom" scrolling="no"></iframe>
+        <iframe allowtransparency="true" class="lightwidget-widget insta-mobile"
+                data-aos="flip-down"
+                data-aos-anchor-placement="center-bottom" scrolling="no"
+                src="//lightwidget.com/widgets/f4ddfc4173aa58e69776472345388fd8.html"
+                style="width:100%;border:0;overflow:hidden;"></iframe>
     </div>
 
 
 </div>
 
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-    <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-        <img id="img01" class="w3-image">
-        <p id="caption" class="w3-opacity w3-large"></p>
-    </div>
-</div>
 
-<!-- Third Parallax Image with Portfolio Text -->
-<div class="bgimg-3 w3-display-container w3-opacity-min">
-    <div class="w3-display-middle">
-        <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
-    </div>
-</div>
-
-<!-- Container (Contact Section) -->
-<div class="w3-content w3-container w3-padding-64" id="contact">
-    <h3 class="w3-center">CONTACT DETAILS</h3>
-    <p class="w3-center"><em>use the links below in order to contact me</em></p>
-
-    <div class="w3-row w3-padding-32 w3-section">
-        <div class="w3-col m4 w3-container">
-
-
-        </div>
-        <div class="w3-col m8 w3-panel">
-            <div class="w3-large w3-margin-bottom">
-                <i class="fa fa-map-marker fa-fw w3-xlarge w3-margin-right"></i>Melbourne Australia<br>
-                <a href="skype:live:ryan93_2?chat" title="Skype" class="contact"><i
-                        class="fa fa-skype fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>live:ryan93_2</a><br>
-                <a href="mailto:ryan93@live.com.au?Subject=Hello%20Ryan" title="Email" class="contact"><i
-                        class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>ryan93@live.com.au</a><br>
-                <a href="https://www.linkedin.com/in/ryan-samarakoon-61966314a/" title="LinkedIn" class="contact"><i
-                        class="fa fa-linkedin-square fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>Ryan
-                    Samarakoon</a><br>
-               <!-- <a href="http://thedevlegend27.github.io" title="Magnus Designs" class="contact"><i
-                        class="fa fa-mouse-pointer fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>Co-Founder
-                    of Magnus Designs</a><br>-->
-                <a href="https://github.com/SimplyBallistic" title="GitHub" class="contact"><i
-                        class="fa fa-github fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>SimplyBallistic</a><br>
-                <a href="https://www.spigotmc.org/members/xballisticblazex.293920/" title="SpigotMC" class="contact"><i
-                        class="fa fa-user fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>Spigot
-                    Profile</a><br>
-                <a href="https://codepen.io/SimplyBallistic/" title="Code Pen" class="contact"><i
-                        class="fa fa-codepen fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>Code
-                    Pen</a><br>
-				 <a href="https://stackoverflow.com/users/5279269/ballisticblaze" title="Stack Overflow" class="contact"><i
-                        class="fa fa-stack-overflow fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>Stack
-                    Overflow</a><br>
-
-
-            </div>
-
-
-            <a href="resume.docx" class="w3-button w3-light-grey w3-padding-large w3-section w3-hover-red wow fadeIn">
-                <i class="fa fa-download"></i> Download Resume
-            </a>
-
-
-        </div>
-
-
-    </div>
-</div>
-
-</div>
-
-<!-- 4th Parallax Image with Purchase Text -->
-<div class="bgimg-4 w3-display-container w3-opacity-min">
-    <div class="w3-display-middle">
-        <span class="w3-xxlarge w3-text-white w3-wide">PURCHASE</span>
-    </div>
-</div>
-<!--Purchase section-->
-
-<div class="w3-content w3-container w3-padding-64" id="purchase">
-    <h3 class="w3-padding-16 w3-center">Website Design</h3>
-    <div class="w3-row-padding wow fadeIn" style="margin:0 -16px">
-        <div class="w3-third w3-margin-bottom">
-            <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-                <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic Cover Page</li>
-                <li class="w3-padding-16">One Simple page</li>
-                <li class="w3-padding-16">Responsive and Adaptive for mobile</li>
-                <li class="w3-padding-16">Free Private Repository</li>
-                <li class="w3-padding-16">Support for One month+</li>
-                <li class="w3-padding-16">
-                    <h2>$ 250</h2>
-
-                </li>
-                <li class="w3-light-grey w3-padding-24">
-                    <a class="w3-button w3-white w3-padding-large w3-hover-black"
-                       href="mailto:ryan93@live.com.au?subject=Website-Basic">Sign Up</a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="w3-third">
-            <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-                <li class="w3-dark-grey w3-xlarge w3-padding-32">Professional Website</li>
-                <li class="w3-padding-16 w3-light-grey"><i>All features from the Basic Pack including...</i></li>
-                <li class="w3-padding-16">Up to 5 pages</li>
-                <li class="w3-padding-16">Interactive Mockup/Preview</li>
-                <li class="w3-padding-16">Up to Five Month Support</li>
-                <li class="w3-padding-16">
-                    <h2>$ 500</h2>
-
-                </li>
-                <li class="w3-light-grey w3-padding-24">
-                    <a class="w3-button w3-white w3-padding-large w3-hover-black"
-                       href="mailto:ryan93@live.com.au?subject=Website-Professional">Sign Up</a>
-                </li>
-            </ul>
-        </div>
-        <div class="w3-third">
-            <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-                <li class="w3-dark-grey w3-xlarge w3-padding-32">Business Website</li>
-                <li class="w3-padding-16 w3-light-grey"><i>All features from the Pro Pack including..</i></li>
-                <li class="w3-padding-16">Up to 10 pages +</li>
-                <li class="w3-padding-16">Complex Web Backend*</li>
-                <li class="w3-padding-16">Endless Support*</li>
-                <li class="w3-padding-16">
-                    <h2>$ 1300+</h2>
-
-                </li>
-                <li class="w3-light-grey w3-padding-24">
-                    <a class="w3-button w3-white w3-padding-large w3-hover-black"
-                       href="mailto:ryan93@live.com.au?subject=Website-Business">Sign Up</a>
-                </li>
-            </ul>
-        </div>
-        <!-- End Grid/Pricing tables -->
-        <!-- Start bukkit pricing -->
-
-
-    </div>
-    <h3 class="w3-padding-16 w3-center">Bukkit & Bungee Plugin Development</h3>
-    <h4 class="w3-padding-16 w3-center"><i>All high tier packages include features from their lower counterparts</i>
-    </h4>
-
-    <div class="w3-row-padding wow fadeIn" style="margin:0 -16px">
-        <div class="w3-third w3-margin-bottom">
-            <ul class="w3-ul w3-white w3-center w3-hover-opacity img-dirt w3-text-white">
-                <li class="w3-dark-grey w3-xlarge w3-padding-32">Dirt Bundle</li>
-                <li class="w3-padding-16">Includes Chat Plugins<br>Command Plugins<br>Utility Plugins<br>Admin Plugins
-                </li>
-                <li class="w3-padding-16">Time span of 1 week + *</li>
-                <li class="w3-padding-16">Small additions range from $5+ *</li>
-                <li class="w3-padding-16">Support for 1 week *</li>
-                <li class="w3-padding-16">
-                    <h2>Free-$30</h2>
-
-                </li>
-                <li class="w3-light-grey w3-padding-24">
-                    <a class="w3-button w3-white w3-padding-large w3-hover-black"
-                       href="mailto:ryan93@live.com.au?subject=Dirt%20Bundle" target="_blank">Get a Quote *</a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="w3-third">
-            <ul class="w3-ul w3-white w3-center w3-hover-opacity img-obsidian w3-text-white">
-                <li class="w3-dark-grey w3-xlarge w3-padding-32">Obsidian Bundle</li>
-                <li class="w3-padding-16">Includes Enchantments<br>Advanced Particles<br>Velocity Interactions<br>NMS
-                </li>
-                <li class="w3-padding-16">Time span of 2-3 weeks + *</li>
-                <li class="w3-padding-16">Free Private Repository + Issue tracker *</li>
-                <li class="w3-padding-16">Support for 2 weeks + Test Server</li>
-                <li class="w3-padding-16">
-                    <h2> $110-$200</h2>
-
-                </li>
-                <li class="w3-light-grey w3-padding-24">
-                    <a class="w3-button w3-white w3-padding-large w3-hover-black"
-                       href="mailto:ryan93@live.com.au?subject=Obsidian%20Bundle" target="_blank">Get a Quote *</a>
-                </li>
-            </ul>
-        </div>
-        <div class="w3-third">
-            <ul class="w3-ul w3-white w3-center w3-hover-opacity img-end w3-text-white">
-                <li class="w3-dark-grey w3-xlarge w3-padding-32">End Bundle</li>
-                <li class="w3-padding-16">Includes Complex NMS<br>Minigames<br>Cores<br>Complex Velocity Interactions
-                </li>
-                <li class="w3-padding-16">Time span of 1-2 months</li>
-                <li class="w3-padding-16">Provide Bungee & Bukkit tie in</li>
-                <li class="w3-padding-16">Support for One month+</li>
-                <li class="w3-padding-16">
-                    <h2>$ 250-$500+</h2>
-
-                </li>
-                <li class="w3-light-grey w3-padding-24">
-                    <!--<button class="w3-button w3-white w3-padding-large w3-hover-black" data-remodal-target="modal" onclick="onPurchaseClick('End Bundle');">Get a Quote*</button>-->
-                    <a class="w3-button w3-white w3-padding-large w3-hover-black"
-                       href="mailto:ryan93@live.com.au?subject=End%20Bundle" target="_blank">Get a Quote *</a>
-                </li>
-            </ul>
-        </div>
-
-        <!-- End Grid/Pricing tables -->
-
-    </div>
-    <h3 class="w3-padding-16 w3-center">All plans are negotiable</h3>
-
-    <span class="w3-opacity">* Terms and Conditions apply- Contact for details</span>
-
-</div>
-
-<!--Remodal Popup-->
-<div class="remodal" data-remodal-id="modal">
-    <button data-remodal-action="close" class="remodal-close"></button>
-    <form method="post" action="">
-        <h3 id="modal-title">Contact</h3>
-        <span class="error"><?php echo $completion;?></span>
-        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-            <div class="w3-half">
-                <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-            </div>
-            <div class="w3-half">
-                <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+<div class="parallax-content portfolio-content" id="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h4 data-aos="zoom-in-down">Portfoilo</h4>
             </div>
         </div>
-        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <div class="row">
+            <ul class='portfolio-filters' data-aos="zoom-in-down">
+                <li>
+                    <a class='active' data-group='all' href='#'>
+                        All
+                    </a>
+                </li>
+                <li>
+                    <a data-group='websites' href='#'>
+                        Websites
+                    </a>
+                </li>
+                <li>
+                    <a data-group='games' href='#'>
+                        Games
+                    </a>
+                </li>
+                <li>
+                    <a data-group='sketches' href='#'>
+                        Sketches
+                    </a>
+                </li>
+                <li>
+                    <a data-group='clients' href='#'>
+                        Clients
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="row">
+            <div class="col-md-12" data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1000"
+                 style="margin-bottom: 20px">
+                <ul class='portfolio-items'>
+
+                    <li data-groups='["clients"]'>
+
+                        <img src='img/Old/clients/classicbites.png' style="margin-top: 20%">
+                        <div class="overlay">
+                            <!-- Links -->
+                            <a class="view-project" onclick="$('#popup-1').iziModal('open')">Learn more</a>
+                        </div>
+                        <!--project popup-->
+                        <div class="iziModal" data-izimodal-group="portfolio" data-izimodal-title="Classic Bites"
+                             id='popup-1'>
+                            <figure>
+
+                                <!--project popup image-->
+                                <img alt class="modal-image" src='img/Old/clients/classicbites.png'>
+
+                            </figure>
+                            <div class='content'>
+
+                                <!--project popup title-->
+                                <h4>Classic Bites</h4>
+
+                                <!--project popup description-->
+                                <div>
+                                    <p>
+                                        Classic Bites was a client who requested a logo from our (now closed) Magnus
+                                        Designs service. The product was the above logo.
+                                    </p></div>
+                                <div class="bottom-button-bar">
+                                    <a href="https://www.facebook.com/ClassicBitesPvtLtd/"><i class="fas fa-globe"></i>
+                                        Visit Client Page</a>
+                                    <a onclick="$('#popup-1').iziModal('close');$('#popup-8').iziModal('open');"><i
+                                            class="fas fa-arrow-right"></i> Jump to Magnus Designs</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </li>
+                    <li data-groups='["clients"]'>
+
+                        <img src='img/Old/clients/differentcraft.jpg' style="width: 100px">
+                        <div class="overlay">
+                            <a class="view-project" onclick="$('#popup-2').iziModal('open')">Learn More</a>
+                        </div>
+                        <div class="iziModal" data-izimodal-group="portfolio" data-izimodal-title="Different Craft"
+                             id='popup-2'>
+                            <figure>
+
+                                <img alt class="modal-image" src='img/Old/clients/differentcraft.jpg'>
+
+                            </figure>
+                            <div class='content'>
+
+                                <h4>Different Craft</h4>
+                                <p>
+                                    Different Craft was one of my first few clients who requested me to develop for them
+                                    several custom 'enchantments' for their game server on top of a few fixer menus.
+
+                                </p>
+                                <div class="bottom-button-bar">
+                                    <a href="https://differentcraft.net/" style="grid-column: 1/3"><i
+                                            class="fas fa-globe"></i> Visit Client Page</a>
+                                </div>
+
+                            </div>
+
+                        </div>
 
 
-        <br>
-        <button data-remodal-action="cancel" class="w3-button w3-light-grey w3-padding-large w3-section w3-hover-red"><i
-                class="fa fa-times"></i><br>Cancel
-        </button>
-        <button class="w3-button w3-light-grey w3-padding-large w3-section w3-hover-green" type="submit"><i
-                class="fa fa-paper-plane"></i><br>SEND
-        </button>
-    </form>
-</div>
-<script>
-    function onPurchaseClick(string) {
-        $('#modal-title').html(string);
+                    </li>
+                    <li data-groups='["clients"]'>
 
-    }
+                        <img src='img/Old/clients/disorbs.jpg' style="width: 150px">
+                        <div class="overlay">
+                            <a class="view-project" onclick="$('#popup-3').iziModal('open')">Learn More</a>
+                        </div>
+                        <div class="iziModal" data-izimodal-group="portfolio" data-izimodal-title="Disorbs"
+                             id='popup-3'>
+                            <figure>
 
-</script>
+                                <img alt class="modal-image" src='img/Old/clients/disorbs.jpg'>
+
+                            </figure>
+                            <div class='content'>
+
+                                <h4>Disorbs</h4>
+
+                                <p>
+                                    Disorbs was also one of my first few clients. After several weeks devoted to free
+                                    work, I was finally at a level to
+                                    get paid for my services. Disorbs requested that I help them implement vehicles and
+                                    a bot prevention system for their
+                                    game server.
+                                </p>
+                                <div class="bottom-button-bar">
+                                    <a href="https://www.disorbs.net/" style="grid-column: 1/3"><i
+                                            class="fas fa-globe"></i> Visit Client Page</a>
+                                </div>
+                            </div>
+
+                        </div>
 
 
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-    <div class="w3-xlarge w3-section">
-        <h6> © Ryan Samarakoon 2018</h6>
-        <h6> Powered by <a href="https://www.w3schools.com/w3css/default.asp" class="contact" target="_blank">W3.CSS</a>
-        </h6>
+                    </li>
+                    <li data-groups='["clients"]'>
+
+                        <img src='img/Old/clients/pokefind.png' style="width: 125px">
+                        <div class="overlay">
+                            <a class="view-project" onclick="$('#popup-4').iziModal('open')">Learn More</a>
+                        </div>
+                        <div class="iziModal" data-izimodal-group="portfolio" data-izimodal-title="PokéFind"
+                             id='popup-4'>
+                            <figure>
+
+                                <img alt class="modal-image" src='img/Old/clients/pokefind.png'>
+
+                            </figure>
+                            <div class='content'>
+
+                                <h4>PokéFind</h4>
+
+                                <p>
+                                    PokéFind is my latest client I currently still work for. I began in 2017 and have
+                                    been working for them for almost
+                                    one and a half years. Over this period, I've helped bring to market several network
+                                    features for their game server
+                                    including an 'auction house' while also creating for them a large scale game dubbed
+                                    PokéFactions. It has taken the majority of
+                                    my time at PokéFind and has a lot planned for its future, which I hope to help
+                                    PokéFind achieve in the near future.
+                                    <br> You can read more about this project on my LinkedIn.
+                                </p>
+                                <div class="bottom-button-bar">
+                                    <a href="https://pokefind.co" style="grid-column: 1/3"><i class="fas fa-globe"></i>
+                                        Visit Client Page</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </li>
+                    <li data-groups='["games"]'>
+
+                        <img src='img/Old/gif/5.gif'>
+                        <div class="overlay">
+                            <a class="view-project" onclick="$('#popup-5').iziModal('open')">Learn More</a>
+                        </div>
+                        <div class="iziModal" data-izimodal-group="portfolio" data-izimodal-title="Project Top Down"
+                             id='popup-5'>
+                            <figure>
+
+                                <img alt class="modal-image" src='img/Old/gif/5.gif'>
+
+                            </figure>
+                            <div class='content'>
+
+                                <h4>Project Top Down</h4>
+
+                                <p>
+                                    Project Top Down was one of my very first projects I undertook with some friends
+                                    when I was starting out with game development. With almost a year of devlopment,
+                                    Project Top Down
+                                    was an interactive multiplayer 2D top down shooter which ran on desktop and mobile.
+                                    After the project
+                                    was abandoned due to the disruption of Box Cubed (the name of our team at the time),
+                                    it still holds a special place
+                                    in my heart. It taught me quite a lot through its unsolvable and frustrating
+                                    problems it brought to our team.
+                                </p>
+                                <div class="bottom-button-bar">
+                                    <a href="https://github.com/BoxCubed/ProjectTopDOWN" style="grid-column: 1/3"><i
+                                            class="fab fa-github"></i> Visit GitHub Page</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </li>
+                    <li data-groups='["games"]'>
+
+                        <img src='img/Old/gif/6.gif'>
+                        <div class="overlay">
+                            <a class="view-project" onclick="$('#popup-6').iziModal('open')">Learn More</a>
+                        </div>
+                        <div class="iziModal" data-izimodal-group="portfolio" data-izimodal-title="Enfinity"
+                             id='popup-6'>
+                            <figure>
+
+                                <img alt class="modal-image" src='img/Old/gif/6.gif'>
+
+                            </figure>
+                            <div class='content'>
+
+                                <h4>Enfinity</h4>
+
+                                <p>
+                                    Enfinity was also another special project I undertook myself. It was the first game
+                                    I attempted
+                                    to make in a 3D environment. While it hosted several challenges and headaches, it
+                                    forecast several mathematical
+                                    concepts I was still to learn in my formal education such as Matrices and their
+                                    respective operations.
+                                    While it was quite hacky, it helped build the foundations of my
+                                    programming knowledge today.
+                                </p>
+                                <div class="bottom-button-bar">
+                                    <a href="https://github.com/BoxCubed/Enfinity" style="grid-column: 1/3"><i
+                                            class="fab fa-github"></i> Visit GitHub Page</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </li>
+                    <li data-groups='["websites"]'>
+
+                        <img src='img/robot-website.gif'>
+                        <div class="overlay">
+                            <a class="view-project" onclick="$('#popup-7').iziModal('open')">Learn More</a>
+                        </div>
+                        <div class="iziModal" data-izimodal-group="portfolio"
+                             data-izimodal-title="Reliance on Technology Informative Website" id='popup-7'>
+                            <figure>
+
+                                <!--project popup image-->
+                                <img alt class="modal-image" src='img/robot-website.gif'>
+
+                            </figure>
+                            <div class='content'>
+
+                                <!--project popup title-->
+                                <h4>Reliance on Technology Informative Website</h4>
+
+                                <!--project popup description-->
+                                <div>
+                                    <p>
+                                        Web Development was quite new to me when I decided to go for a raw html website
+                                        for my school project,
+                                        but I didn't let that fact stop me. While this wasn't my first website project,
+                                        it had several new concepts I never grasped my head around prior
+                                        such as modals and bootstrap (I have been using w3, a much easier framework for
+                                        building websites). While my teammates worked on styling, I
+                                        ensured to develop a color scheme and format that would both be appealing and
+                                        easy to digest for the viewer. While I may change a few things
+                                        such as the margins or size of the text, I was proud of my ability to improvise
+                                        for this project. As you can see, I've come a long way from this project.
+                                    </p></div>
+                                <div class="bottom-button-bar">
+                                    <a href="http://ryan-s.me/Reliance-Technology-Info-Website/"><i
+                                            class="fas fa-globe"></i> Visit Page</a>
+                                    <a href="https://github.com/SimplyBallistic/Reliance-Technology-Info-Website"><i
+                                            class="fab fa-github"></i> Visit GitHub Page</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </li>
+                    <li data-groups='["websites"]'>
+
+                        <img src='img/magnus.gif'>
+                        <div class="overlay">
+                            <a class="view-project" onclick="$('#popup-8').iziModal('open')">Learn More</a>
+                        </div>
+                        <div class="iziModal" data-izimodal-group="portfolio" data-izimodal-title="Magnus Designs"
+                             id='popup-8'>
+                            <figure>
+
+                                <!--project popup image-->
+                                <img alt class="modal-image" src='img/magnus.gif'>
+
+                            </figure>
+                            <div class='content'>
+
+                                <!--project popup title-->
+                                <h4>Magnus Designs</h4>
+
+                                <!--project popup description-->
+                                <div>
+                                    <p>
+                                        Magnus Designs was one of my hardest failures. After an idea turned into a
+                                        dream,
+                                        my team aspired to be professional designers, and this was our website. With
+                                        marketting being expensive for
+                                        a bunch of young students and a disaster for our first client, it never turned
+                                        out to be. However, this project forced me to learn web design on a scale I
+                                        never have while
+                                        also opening me to several other important concepts such as SEO. Before Magnus,
+                                        I never had the intention to
+                                        turn web into one of my key skills, but now, I've never been more grateful for
+                                        the oppurtunity Magnus Designs gave us.
+                                    </p></div>
+                                <div class="bottom-button-bar">
+                                    <a href="https://thedevlegend27.github.io"><i class="fas fa-globe"></i> Visit
+                                        Page</a>
+                                    <a href="https://github.com/thedevLEGEND27/thedevLEGEND27.github.io"><i
+                                            class="fab fa-github"></i> Visit GitHub Page</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </li>
+                    <li data-groups='["sketches"]'>
+
+                        <img src='img/flappy-machine-learning.gif'>
+                        <div class="overlay">
+                            <a class="view-project" onclick="$('#popup-9').iziModal('open')">Learn More</a>
+                        </div>
+                        <div class="iziModal" data-izimodal-group="portfolio"
+                             data-izimodal-title="Flappy Bird Machine learning"
+                             id='popup-9'>
+                            <figure>
+
+                                <!--project popup image-->
+                                <img alt class="modal-image" src='img/flappy-machine-learning.gif'>
+
+                            </figure>
+                            <div class='content'>
+
+                                <!--project popup title-->
+                                <h4>Flappy Bird Machine Learning</h4>
+
+                                <!--project popup description-->
+                                <div>
+                                    <p>
+                                        Flappy Bird was my first taste into machine learning and its capability. While
+                                        it may seem like a
+                                        another buzzword to many people, machine learning has great applications and use
+                                        cases for a plethora
+                                        of projects, the only question now is how. Inspired by the Coding Train, an
+                                        educational content creator,
+                                        Flappy Bird Machine learning gave me the push I needed to pursue machine
+                                        learning further. Maybe you'll see
+                                        more projects like this one here some day...
+                                    </p></div>
+                                <div class="bottom-button-bar" style="grid-template-columns: 1fr 1fr 1fr;">
+                                    <a href="http://ryan-s.me/js-projects/flappy-js/src/index.html"><i
+                                            class="fas fa-globe"></i> View Project</a>
+                                    <a href="http://ryan-s.me/js-projects/index.html"><i class="fas fa-globe"></i> View
+                                        more Sketches</a>
+                                    <a href="https://github.com/SimplyBallistic/js-projects/tree/master/flappy-js"><i
+                                            class="fab fa-github"></i> Visit GitHub Page</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </li>
+                    <li data-groups='["sketches"]'>
+
+                        <img src='img/particles.gif'>
+                        <div class="overlay">
+                            <a class="view-project" onclick="$('#popup-10').iziModal('open')">Learn More</a>
+                        </div>
+                        <div class="iziModal" data-izimodal-group="portfolio" data-izimodal-title="Touch Particles"
+                             id='popup-10'>
+                            <figure>
+
+                                <!--project popup image-->
+                                <img alt class="modal-image" src='img/particles.gif'>
+
+                            </figure>
+                            <div class='content'>
+
+                                <!--project popup title-->
+                                <h4>Touch Particles</h4>
+
+                                <!--project popup description-->
+                                <div>
+                                    <p>
+                                        This project was one of my the JS projects I've made. After seeing the power of
+                                        JS through several content creators,
+                                        I was pushed to try use some of my early math concepts (the unit circle in this
+                                        example)
+                                        to test out my knowledge. It makes me wonder if mathematics got me interested in
+                                        programming or vice versa.
+                                    </p></div>
+                                <div class="bottom-button-bar" style="grid-template-columns: 1fr 1fr 1fr;">
+                                    <a href="http://ryan-s.me/js-projects/particle-js/src/index.html"><i
+                                            class="fas fa-globe"></i> View Project</a>
+                                    <a href="http://ryan-s.me/js-projects/index.html"><i class="fas fa-globe"></i> View
+                                        more Sketches</a>
+                                    <a href="https://codepen.io/SimplyBallistic/pen/MGgMvz"><i
+                                            class="fab fa-codepen"></i> Visit Pen</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
     </div>
 
+</div>
 
+
+<div class="skills-content" id="skills">
+    <div class="wrapper">
+        <h4 data-aos="zoom-in-down">Skills</h4>
+        <div class="grid">
+            <div>
+                <h2 data-aos="fade-in">Languages I know</h2>
+                <ul class="tabs clearfix">
+                    <li><span class="active" data-aos="fade-up" data-aos-delay="100">HTML/CSS</span></li>
+                    <li><span class="active" data-aos="fade-up" data-aos-delay="150">Javascript</span></li>
+                    <li><span class="active" data-aos="fade-up" data-aos-delay="200">Java</span></li>
+                    <li><span class="active" data-aos="fade-up" data-aos-delay="250">C#</span></li>
+                </ul>
+            </div>
+            <div>
+                <h2 data-aos="fade-in">Tech I use on the Frontend</h2>
+                <ul class="tabs clearfix">
+                    <li><span class="active" data-aos="fade-up" data-aos-delay="250">JQuery</span></li>
+                    <li><span class="active" data-aos="fade-up" data-aos-delay="200">React</span></li>
+                    <li><span class="active" data-aos="fade-up" data-aos-delay="150">Bootstrap</span></li>
+                    <li><span class="active" data-aos="fade-up" data-aos-delay="100">Tailwind</span></li>
+                </ul>
+            </div>
+            <div>
+                <h2 data-aos="fade-in">Tech I use for the Backend</h2>
+                <ul class="tabs clearfix">
+                    <li><span class="active" data-aos="fade-up" data-aos-delay="100">Node.js</span></li>
+                    <li><span class="active" data-aos="fade-up" data-aos-delay="150">Vaadin</span></li>
+                    <li><span class="active" data-aos="fade-up" data-aos-delay="200">MongoDB</span></li>
+                    <li><span class="active" data-aos="fade-up" data-aos-delay="250">Gson</span></li>
+                </ul>
+            </div>
+
+            <div>
+                <h2 data-aos="fade-in">Tech I use for media</h2>
+                <ul class="tabs clearfix">
+                    <li><span class="active" data-aos="fade-up" data-aos-delay="200">Power Director 14</span></li>
+                    <li><span class="active" data-aos="fade-up" data-aos-delay="150">Photoshop</span></li>
+                    <li><span class="active" data-aos="fade-up" data-aos-delay="100">Lightroom</span></li>
+                </ul>
+            </div>
+            <div>
+                <h2 data-aos="fade-in">Other Tech I may use</h2>
+                <ul class="tabs clearfix">
+                    <li><span class="active" data-aos="fade-up" data-aos-delay="100">Git</span></li>
+                    <li><span class="active" data-aos="fade-up" data-aos-delay="150">Linux</span></li>
+                    <li><span class="active" data-aos="fade-up" data-aos-delay="200">IntelliJ</span></li>
+                    <li><span class="active" data-aos="fade-up" data-aos-delay="250">Webstorm</span></li>
+                </ul>
+            </div>
+            <div>
+                <h2 data-aos="fade-in">APIs I may use</h2>
+                <ul class="tabs clearfix">
+                    <li><span class="active" data-aos="fade-up" data-aos-delay="250">Spigot</span></li>
+                    <li><span class="active" data-aos="fade-up" data-aos-delay="200">Discord4J</span></li>
+                    <li><span class="active" data-aos="fade-up" data-aos-delay="150">p5.js</span></li>
+                    <li><span class="active" data-aos="fade-up" data-aos-delay="100">LibGDX</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="parallax-content contact-content" id="contact-us">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="contact-form">
+                    <div class="row">
+                        <form action="https://formspree.io/ryan93@live.com.au" data-aos="fade-in" id="contact"
+                              method="post"
+                              style="margin: 0 auto">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <fieldset>
+                                        <input class="form-control" id="name-form" name="name"
+                                               placeholder="Your name..."
+                                               required="" type="text">
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-12">
+                                    <fieldset>
+                                        <input class="form-control" id="email" name="email" placeholder="Your email..."
+                                               required="" type="email">
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-12">
+                                    <fieldset>
+                                        <textarea class="form-control" id="message" name="message"
+                                                  placeholder="Your message..."
+                                                  required="" rows="6"></textarea>
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-12">
+                                    <fieldset>
+                                        <button type="submit" id="form-submit" class="btn">Send Message</button>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="primary-button">
+                    <a data-aos="zoom-in" data-aos-anchor-placement="top-bottom" href="#home">Back To Top</a>
+                </div>
+                <ul class="social-list">
+
+                    <li data-aos="zoom-in-right" data-aos-anchor-placement="top-bottom" data-aos-delay="100"><a
+                            href="https://github.com/SimplyBallistic"><i class="fab fa-github"></i></a></li>
+                    <li data-aos="zoom-in-right" data-aos-anchor-placement="top-bottom" data-aos-delay="150"><a
+                            href="https://stackoverflow.com/users/5279269/ballisticblaze"><i
+                            class="fab fa-stack-overflow"></i></a></li>
+                    <li data-aos="zoom-in-right" data-aos-anchor-placement="top-bottom" data-aos-delay="200"><a
+                            href="https://www.linkedin.com/in/ryan-samarakoon-61966314a/"><i
+                            class="fab fa-linkedin-in"></i></a></li>
+                    <li data-aos="zoom-in-right" data-aos-anchor-placement="top-bottom" data-aos-delay="250"><a
+                            href="https://codepen.io/SimplyBallistic/"><i class="fab fa-codepen"></i></a></li>
+                    <li data-aos="zoom-in-right" data-aos-anchor-placement="top-bottom" data-aos-delay="300"><a
+                            href="https://instagram.com/ryan_s_life/"><i class="fab fa-instagram"></i></a></li>
+                    <li data-aos="zoom-in-right" data-aos-anchor-placement="top-bottom" data-aos-delay="350"><a
+                            href="skype:live:ryan93_2?chat"><i class="fab fa-skype"></i></a></li>
+                    <li data-aos="zoom-in-right" data-aos-anchor-placement="top-bottom" data-aos-delay="400"><a
+                            href="https://www.facebook.com/profile.php?id=100009148351762"><i
+                            class="fab fa-facebook"></i></a></li>
+                    <li data-aos="zoom-in-right" data-aos-anchor-placement="top-bottom" data-aos-delay="450"><a
+                            href="mailto:ryan93@live.com.au?Subject=Business%20Inquiry"><i
+                            class="fas fa-envelope"></i></a></li>
+                </ul>
+                <p>All images &copy; Ryan Samarakoon 2019</p>
+                <p>All product names, logos, and brands are property of their respective owners</p>
+            </div>
+        </div>
+    </div>
 </footer>
 
-<!-- Add Google Maps -->
-<script>
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+<script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><!--Instagram feed-->
+<script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+<script crossorigin="anonymous"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script><!--Animate on Scroll-->
+<script src="js/vendor/owl.carousel.min.js"></script>
+<script src="js/vendor/iziModal.min.js"></script>
+<script src="js/vendor/jquery.shuffle.min.js"></script>
 
-
-    // Modal Image Gallery
-    function onClick(element) {
-        document.getElementById("img01").src = element.src;
-        document.getElementById("modal01").style.display = "block";
-        var captionText = document.getElementById("caption");
-        console.log(element.alt.indexOf("Magnus"));
-        if(element.alt.indexOf("Magnus")!==-1)
-            captionText.innerHTML="Logo produced by <a href='http://magnus-designs.tech'>Magnus Designs</a>";
-        else
-        captionText.innerHTML = element.alt;
-    }
-
-    // Change style of navbar on scroll
-
-    window.onscroll = function () {
-        myFunction()
-    };
-
-    function myFunction() {
-        var navbar = document.getElementById("myNavbar");
-        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-            navbar.className = "w3-bar" + " w3-card-2" + " w3-animate-top" + " w3-white" + " w3-text-grey";
-        } else {
-            navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "") + " w3-text-light-grey";
-        }
-    }
-
-
-
-    // Used to toggle the menu on small screens when clicking on the menu button
-    function toggleFunction() {
-        var x = document.getElementById("navDemo");
-        if (x.className.indexOf("w3-show") == -1) {
-            x.className += " w3-show";
-        } else {
-            x.className = x.className.replace(" w3-show", "");
-        }
-    }
-
-</script>
-
-
-<!--Start Remodal-->
-<script type="text/javascript" src="js/remodal.min.js"></script>
-<!--Start Scroll Revel-->
-<script src="js/wow.js"></script>
-<script>
-    new WOW().init();
-</script>
-<!--Typed-->
-<script>
-    var options = {
-        strings: ["Simply Fast", "Simply Cheap","Simply Diverse","Simply Excellent","Simply <b>Ballistic</b>"],
-        typeSpeed: 100,
-        backSpeed: 40,
-        startDelay: 1000,
-        backDelay: 1500,
-        autoInsertCss: true,
-        loop: true,
-        loopCount: Infinity,
-
-        smartBackspace: true
-    };
-
-    var typed = new Typed(".rotate-typed", options);
-
-
-</script>
+<script src="js/main.js"></script>
 <!--start analytics-->
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
     ga('create', 'UA-105581486-1', 'auto');
     ga('send', 'pageview');
-
 </script>
 
 
-
-
-
-
-
 </body>
-
-
 </html>
