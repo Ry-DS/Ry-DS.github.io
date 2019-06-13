@@ -9,42 +9,67 @@
 
 <url>
   <loc>http://ryan-s.me/</loc>
-  <lastmod>2018-05-16T01:36:18+00:00</lastmod>
+    <lastmod>2019-06-13T12:24:38+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>http://ryan-s.me/js-projects/index.html</loc>
-  <lastmod>2018-05-15T08:30:21+00:00</lastmod>
-  <priority>0.80</priority>
+    <loc>http://ryan-s.me/Reliance-Technology-Info-Website/</loc>
+    <lastmod>2019-04-11T09:39:24+00:00</lastmod>
+    <priority>0.80</priority>
+</url>
+    <url>
+        <loc>http://ryan-s.me/js-projects/flappy-js/src/index.html</loc>
+        <lastmod>2018-07-23T02:30:42+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://ryan-s.me/js-projects/index.html</loc>
+        <lastmod>2018-07-23T02:30:42+00:00</lastmod>
+        <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://ryan-s.me/js-projects/js/src/index.html</loc>
-  <lastmod>2018-05-15T08:30:21+00:00</lastmod>
+    <loc>http://ryan-s.me/js-projects/particle-js/src/index.html</loc>
+    <lastmod>2018-07-23T02:30:42+00:00</lastmod>
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>http://ryan-s.me/vce-exam-calendar-importer/</loc>
+    <lastmod>2019-06-13T08:11:33+00:00</lastmod>
+    <priority>0.80</priority>
+</url>
+    <url>
+        <loc>http://ryan-s.me/Reliance-Technology-Info-Website/index.html</loc>
+        <lastmod>2019-04-11T09:39:24+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://ryan-s.me/js-projects/flappy-js/src/index.html</loc>
-  <lastmod>2018-05-15T08:30:21+00:00</lastmod>
+    <loc>http://ryan-s.me/js-projects/js/src/index.html</loc>
+    <lastmod>2018-07-23T02:30:42+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://ryan-s.me/js-projects/circle-packing/src/index.html</loc>
-  <lastmod>2018-05-15T08:30:21+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://ryan-s.me/js-projects/particle-js/src/index.html</loc>
-  <lastmod>2018-05-15T08:30:21+00:00</lastmod>
+    <loc>http://ryan-s.me/js-projects/circle-packing/src/index.html</loc>
+    <lastmod>2018-07-23T02:30:42+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://ryan-s.me/js-projects/snake-js/src/index.html</loc>
-  <lastmod>2018-05-15T08:30:21+00:00</lastmod>
+    <lastmod>2018-07-23T02:30:42+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://ryan-s.me/js-projects/water-rippels/src/index.html</loc>
-  <lastmod>2018-05-15T08:30:21+00:00</lastmod>
+    <lastmod>2018-07-23T02:30:42+00:00</lastmod>
+    <priority>0.64</priority>
+</url>
+    <url>
+        <loc>http://ryan-s.me/js-projects/dot-finder-js/src/index.html</loc>
+        <lastmod>2018-07-23T02:30:42+00:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>http://ryan-s.me/js-projects/connecting-dots/src/index.html</loc>
+        <lastmod>2018-07-23T02:30:42+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
