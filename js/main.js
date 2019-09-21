@@ -13,11 +13,27 @@ jQuery(document).ready(function($) {
     var top_header = $('.parallax-content');
     top_header.css({'background-position':'center center'}); // better use CSS
 
-    $(window).scroll(function () {
-    var st = $(this).scrollTop();
-    top_header.css({'background-position':'center calc(50% + '+(st*.5)+'px)'});
-    });
 
+    var isMobile = false;
+
+    if( $('#mobile-detect').css('display')=='none') {
+        isMobile = true;       
+    }
+
+    
+
+    if (!isMobile) {//animate, computer im running on can handle it
+        $(window).scroll(function () {
+            var st = $(this).scrollTop();
+            top_header.css({'background-position':'center calc(50% + '+(st*.5)+'px)'});
+            });
+        
+    }else top_header.css({ 'background-attachment': 'fixed',
+        'background-position': 'center',
+        'background-repeat': 'no-repeat',
+        
+        'background-size': 'cover'});//freeze it instead. 
+   
 
     $('body').scrollspy({ 
         target: '.fixed-side-navbar',

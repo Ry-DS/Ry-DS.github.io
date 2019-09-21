@@ -848,3 +848,8 @@ footer em {
   }
 
 }
+/*Hacky phone detection*/
+/*https://stackoverflow.com/questions/3514784/what-is-the-best-way-to-detect-a-mobile-device*/
+@media only screen and (max-width: 760px) {
+  #mobile-detect { display: none; }
+}
