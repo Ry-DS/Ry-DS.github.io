@@ -146,6 +146,7 @@ window.onload = () => {
 
         }
     });
+    $('.view-project').click(() => holder.tooltip('hide'));
 
 
 };
