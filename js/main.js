@@ -125,7 +125,7 @@ window.onload = () => {
     holder.tooltip({
         title: `${isMobile ? 'Tap' : 'Click'} to learn more`,
         trigger: 'manual',
-        placement: 'right',
+        placement: 'top',
         fade: true
     });
 
