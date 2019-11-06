@@ -5,6 +5,7 @@ Vanilla Template
 https://templatemo.com/tm-526-vanilla
 
 */
+let isMobile = false;
 //Parallax and owl carousel init
 jQuery(document).ready(function($) {
 
@@ -14,7 +15,7 @@ jQuery(document).ready(function($) {
     top_header.css({'background-position':'center center'}); // better use CSS
 
 
-    var isMobile = false;
+
 
     if( $('#mobile-detect').css('display')=='none') {
         isMobile = true;       
@@ -93,6 +94,7 @@ $('.portfolio-filters > li > a').on('click', function (e) {
 });
 
 window.onload = () => {
+    //load backdrops later to improve loading time
     $('#portfolio').addClass($('#portfolio').attr('data-class'));
     $('#contact-us').addClass($('#contact-us').attr('data-class'));
     console.log("Loading Gifs...");
@@ -111,15 +113,39 @@ window.onload = () => {
     setTimeout(()=>{
         portfolio.filter();
         for (let i = 1; i <= $('.portfolio-content > .container > .row > div >  .portfolio-items > li').length; i++) {
-
+            //theme izimodals on startup
             $('#popup-' + i).iziModal({headerColor: '#ff7d27', icon: 'fas fa-briefcase', background: 'rgb(36, 36, 19)'});
 
 
         }
 
     }, 3000);
+    //Tooltip for folio section
+    let holder = $('.tooltip-holder');
+    holder.tooltip({
+        title: `${isMobile ? 'Tap' : 'Click'} to learn more`,
+        trigger: 'manual',
+        placement: 'right',
+        fade: true
+    });
 
+    let shown = false;
+    $(window).scroll(function () {
+        var docViewTop = $(window).scrollTop();
+        var docViewBottom = docViewTop + $(window).height();
 
+        var elemTop = $(holder).offset().top;
+        var elemBottom = elemTop + $(holder).height();
+
+        if ((elemBottom <= docViewBottom) && (elemTop >= docViewTop) && !shown) {
+            holder.tooltip('show');
+            setTimeout(() => {
+                holder.tooltip('hide');
+            }, 3000);
+            shown = true;
+
+        }
+    });
 
 
 };

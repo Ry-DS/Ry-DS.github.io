@@ -176,8 +176,8 @@
                 <ul class='portfolio-items'>
                     <li data-groups='["clients"]'>
 
-                        <img src='img/logos/wuat.png' style="margin-top: 20%">
-                        <div class="overlay">
+                        <img class="tooltip-holder" src='img/logos/wuat.png' style="margin-top: 20%">
+                        <div class="overlay" onclick="$('#popup-1').iziModal('open')">
                             <!-- Links -->
                             <a class="view-project" onclick="$('#popup-1').iziModal('open')">Learn more</a>
                         </div>
@@ -240,7 +240,7 @@
                     <li data-groups='["clients"]'>
 
                         <img src='img/Old/clients/classicbites.png' style="margin-top: 20%">
-                        <div class="overlay">
+                        <div class="overlay" onclick="$('#popup-2').iziModal('open')">
                             <!-- Links -->
                             <a class="view-project" onclick="$('#popup-2').iziModal('open')">Learn more</a>
                         </div>
@@ -279,7 +279,7 @@
                     <li data-groups='["clients"]'>
 
                         <img src='img/Old/clients/differentcraft.jpg' style="width: 100px">
-                        <div class="overlay">
+                        <div class="overlay" onclick="$('#popup-3').iziModal('open')">
                             <a class="view-project" onclick="$('#popup-3').iziModal('open')">Learn More</a>
                         </div>
                         <div class="iziModal" data-izimodal-group="portfolio" data-izimodal-title="Different Craft"
@@ -311,7 +311,7 @@
                     <li data-groups='["clients"]'>
 
                         <img src='img/Old/clients/disorbs.jpg' style="width: 150px">
-                        <div class="overlay">
+                        <div class="overlay" onclick="$('#popup-4').iziModal('open')">
                             <a class="view-project" onclick="$('#popup-4').iziModal('open')">Learn More</a>
                         </div>
                         <div class="iziModal" data-izimodal-group="portfolio" data-izimodal-title="Disorbs"
@@ -345,7 +345,7 @@
                     <li data-groups='["clients"]'>
 
                         <img src='img/Old/clients/pokefind.png' style="width: 125px">
-                        <div class="overlay">
+                        <div class="overlay" onclick="$('#popup-5').iziModal('open')">
                             <a class="view-project" onclick="$('#popup-5').iziModal('open')">Learn More</a>
                         </div>
                         <div class="iziModal" data-izimodal-group="portfolio" data-izimodal-title="PokéFind"
@@ -383,7 +383,7 @@
                     <li data-groups='["games"]'>
 
                         <img class="gif-load" data-src='img/Old/gif/5.gif'>
-                        <div class="overlay">
+                        <div class="overlay" onclick="$('#popup-6').iziModal('open')">
                             <a class="view-project" onclick="$('#popup-6').iziModal('open')">Learn More</a>
                         </div>
                         <div class="iziModal" data-izimodal-group="portfolio" data-izimodal-title="Project Top Down"
@@ -420,7 +420,7 @@
                     <li data-groups='["games"]'>
 
                         <img class="gif-load" data-src="img/Old/gif/6.gif">
-                        <div class="overlay">
+                        <div class="overlay" onclick="$('#popup-7').iziModal('open')">
                             <a class="view-project" onclick="$('#popup-7').iziModal('open')">Learn More</a>
                         </div>
                         <div class="iziModal" data-izimodal-group="portfolio" data-izimodal-title="Enfinity"
@@ -456,7 +456,7 @@
                     <li data-groups='["websites"]'>
 
                         <img class="gif-load" data-src='img/robot-website.gif'>
-                        <div class="overlay">
+                        <div class="overlay" onclick="$('#popup-8').iziModal('open')">
                             <a class="view-project" onclick="$('#popup-8').iziModal('open')">Learn More</a>
                         </div>
                         <div class="iziModal" data-izimodal-group="portfolio"
@@ -502,7 +502,7 @@
                     <li data-groups='["websites"]'>
 
                         <img class="gif-load" data-src='img/magnus.gif'>
-                        <div class="overlay">
+                        <div class="overlay" onclick="$('#popup-9').iziModal('open')">
                             <a class="view-project" onclick="$('#popup-9').iziModal('open')">Learn More</a>
                         </div>
                         <div class="iziModal" data-izimodal-group="portfolio" data-izimodal-title="Magnus Designs"
@@ -549,7 +549,7 @@
                     <li data-groups='["sketches"]'>
 
                         <img class="gif-load" data-src='img/flappy-machine-learning.gif'>
-                        <div class="overlay">
+                        <div class="overlay" onclick="$('#popup-10').iziModal('open')">
                             <a class="view-project" onclick="$('#popup-10').iziModal('open')">Learn More</a>
                         </div>
                         <div class="iziModal" data-izimodal-group="portfolio"
@@ -596,7 +596,7 @@
                     <li data-groups='["sketches"]'>
 
                         <img class="gif-load" data-src='img/particles.gif'>
-                        <div class="overlay">
+                        <div class="overlay" onclick="$('#popup-11').iziModal('open')">
                             <a class="view-project" onclick="$('#popup-11').iziModal('open')">Learn More</a>
                         </div>
                         <div class="iziModal" data-izimodal-group="portfolio" data-izimodal-title="Touch Particles"
@@ -639,7 +639,7 @@
                     <li data-groups='["websites"]'>
 
                         <img class="gif-load" data-src='img/exam-importer.gif'>
-                        <div class="overlay">
+                        <div class="overlay" onclick="$('#popup-12').iziModal('open')">
                             <a class="view-project" onclick="$('#popup-12').iziModal('open')">Learn More</a>
                         </div>
                         <div class="iziModal" data-izimodal-group="portfolio"
@@ -855,6 +855,7 @@
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
 <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><!--Instagram feed-->
 <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 <script crossorigin="anonymous"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
@@ -862,6 +863,7 @@
 <script crossorigin="anonymous"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/jquery-appear-original@0.6.2/index.js"></script>
 
 <script src="js/vendor/iziModal.min.js"></script>
 <script src="js/vendor/jquery.shuffle.min.js"></script>
