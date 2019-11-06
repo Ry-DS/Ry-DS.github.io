@@ -141,7 +141,7 @@ window.onload = () => {
             holder.tooltip('show');
             setTimeout(() => {
                 holder.tooltip('hide');
-            }, 3000);
+            }, 10000);
             shown = true;
 
         }
