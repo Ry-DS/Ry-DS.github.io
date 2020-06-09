@@ -86,6 +86,7 @@ const typedOptions = {
     smartBackspace: true
 };
 new Typed("#name", typedOptions);
+loadPortfolioItems();
 let portfolio = new Shuffle(document.querySelector('.portfolio-items'), {
     itemSelector: 'li'
 });
@@ -176,3 +177,4 @@ function getUrlVars() {
     });
     return vars;
 }
+
