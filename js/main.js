@@ -13,11 +13,8 @@ let isMobile = false;
 jQuery(document).ready(function ($) {
 
 
-
     let top_header = $('.parallax-content');
-    top_header.css({ 'background-position': 'center center' }); // prepare for parallax
-
-
+    top_header.css({'background-position': 'center center'}); // prepare for parallax
 
 
     if ($('#mobile-detect').css('display') == 'none') {//detect if on mobile
@@ -25,11 +22,10 @@ jQuery(document).ready(function ($) {
     }
 
 
-
     if (!isMobile) {//do parallax, computer im running on can handle it
         $(window).scroll(function () {
             var st = $(this).scrollTop();
-            top_header.css({ 'background-position': 'center calc(50% + ' + (st * .5) + 'px)' });
+            top_header.css({'background-position': 'center calc(50% + ' + (st * .5) + 'px)'});
         });
 
     } else top_header.css({
@@ -119,14 +115,13 @@ window.onload = () => {
 
     for (let i = 1; i <= $('.portfolio-content > .container > .row > div >  .portfolio-items > li').length; i++) {
         //theme izimodals on startup
-        $('#popup-' + i).iziModal({ headerColor: '#ff7d27', icon: 'fas fa-briefcase', background: 'rgb(36, 36, 19)' });
+        $('#popup-' + i).iziModal({headerColor: '#ff7d27', icon: 'fas fa-briefcase', background: 'rgb(36, 36, 19)'});
 
 
     }
 
 
-
-    // read url params and jump to relevent portfolio card if present
+    // read url params and jump to relevant portfolio card if present
 
     let params = getUrlVars();
     if (window.location.hash.includes('portfolio') && params['card']) {
@@ -145,20 +140,20 @@ window.onload = () => {
     // code to make the tooltip appear on scroll. 
     let shown = false;
     $(window).scroll(function () {
-        var docViewTop = $(window).scrollTop();
-        var docViewBottom = docViewTop + $(window).height();
+        const docViewTop = $(window).scrollTop();
+        const docViewBottom = docViewTop + $(window).height();
 
-        var elemTop = $(holder).offset().top;
-        var elemBottom = elemTop + $(holder).height();
+        const elemTop = $(holder).offset().top;
+        const elemBottom = elemTop + $(holder).height();
 
         if ((elemBottom <= docViewBottom) && (elemTop >= docViewTop) && !shown) {
 
             setTimeout(() =>
-                holder.tooltip('show')
+                    holder.tooltip('show')
                 , 1000);//small timeout to grab attention
 
             setTimeout(() =>
-                holder.tooltip('hide')
+                    holder.tooltip('hide')
                 , 30000);// Timeout to hide if nothing is done
             shown = true;
 
@@ -166,12 +161,55 @@ window.onload = () => {
     });
     $('.view-project').click(() => holder.tooltip('hide'));//also hide it if a card is clicked
 
+    // load instagram carousel
+    const NUM_IMAGES = 10;
+    const carousel = $('#insta-carousel');
+
+    carousel.slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 800,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 680,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+    for (let i = 1; i <= NUM_IMAGES; i++) {
+        const imgUrl = `img/Instagram Photos/${i}.jpg`;
+
+        carousel.slick('slickAdd', `<a href="https://www.instagram.com/ryan_s_life/" style="text-align: center" target="_blank"><img src="${imgUrl}" style="object-fit: cover;width: 100%;height: 285px;" alt="Instagram Photo"/></a>`);
+
+    }
+
 
 };
+
 //https://html-online.com/articles/get-url-parameters-javascript/
 function getUrlVars() {
-    var vars = {};
-    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+    const vars = {};
+    const parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
         vars[key] = value;
     });
     return vars;

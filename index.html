@@ -14,9 +14,14 @@
     <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" rel="stylesheet">
 
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
     <link href="css/iziModal.min.css" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" rel="stylesheet">
+
     <link href="css/main.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
 
 
 
@@ -120,19 +125,8 @@
 
 
         </div>
-
-        <div class="container">
-            <!-- LightWidget WIDGET -->
-
-            <iframe src="//lightwidget.com/widgets/803575b768395987a958fbd7b6d991d5.html" allowtransparency="true"
-                class="lightwidget-widget insta" data-aos="flip-down"
-                style="width:100%;border:0;overflow:hidden;margin-top: 30px;margin-bottom: 30px"
-                data-aos-anchor-placement="center-bottom" scrolling="no"></iframe>
-            <iframe allowtransparency="true" class="lightwidget-widget insta-mobile" data-aos="flip-down"
-                data-aos-anchor-placement="center-bottom" scrolling="no"
-                src="//lightwidget.com/widgets/f4ddfc4173aa58e69776472345388fd8.html"
-                style="width:100%;border:0;overflow:hidden;"></iframe>
-        </div>
+        <!--Instagram Photos-->
+        <div class="container" data-aos="zoom-in-up" style="margin-top: 100px" id="insta-carousel"></div>
 
 
     </div>
@@ -768,26 +762,31 @@
                     <ul class="tabs clearfix">
                         <li><span class="active" data-aos="fade-up" data-aos-delay="100">HTML/CSS</span></li>
                         <li><span class="active" data-aos="fade-up" data-aos-delay="150">Javascript</span></li>
+                        <li><span class="active" data-aos="fade-up" data-aos-delay="250">Typescript</span></li>
                         <li><span class="active" data-aos="fade-up" data-aos-delay="200">Java</span></li>
-                        <li><span class="active" data-aos="fade-up" data-aos-delay="250">C#</span></li>
+                        <li><span class="active" data-aos="fade-up" data-aos-delay="250">Python</span></li>
                     </ul>
                 </div>
                 <div>
                     <h2 data-aos="fade-in">Tech I use on the Frontend</h2>
                     <ul class="tabs clearfix">
-                        <li><span class="active" data-aos="fade-up" data-aos-delay="250">JQuery</span></li>
                         <li><span class="active" data-aos="fade-up" data-aos-delay="200">React</span></li>
+                        <li><span class="active" data-aos="fade-up" data-aos-delay="200">Redux Toolkit</span></li>
                         <li><span class="active" data-aos="fade-up" data-aos-delay="150">Bootstrap</span></li>
-                        <li><span class="active" data-aos="fade-up" data-aos-delay="100">Tailwind</span></li>
+                        <li><span class="active" data-aos="fade-up" data-aos-delay="100">Material UI</span></li>
+                        <li><span class="active" data-aos="fade-up" data-aos-delay="200">Gatsby</span></li>
+                        <li><span class="active" data-aos="fade-up" data-aos-delay="100">SCSS</span></li>
+                        <li><span class="active" data-aos="fade-up" data-aos-delay="250">JQuery</span></li>
                     </ul>
                 </div>
                 <div>
                     <h2 data-aos="fade-in">Tech I use for the Backend</h2>
                     <ul class="tabs clearfix">
                         <li><span class="active" data-aos="fade-up" data-aos-delay="100">Node.js</span></li>
-                        <li><span class="active" data-aos="fade-up" data-aos-delay="150">Vaadin</span></li>
+                        <li><span class="active" data-aos="fade-up" data-aos-delay="100">Express</span></li>
+                        <li><span class="active" data-aos="fade-up" data-aos-delay="100">Passport</span></li>
+                        <li><span class="active" data-aos="fade-up" data-aos-delay="100">Spring</span></li>
                         <li><span class="active" data-aos="fade-up" data-aos-delay="200">MongoDB</span></li>
-                        <li><span class="active" data-aos="fade-up" data-aos-delay="250">Gson</span></li>
                     </ul>
                 </div>
 
@@ -803,6 +802,7 @@
                     <h2 data-aos="fade-in">Other Tech I may use</h2>
                     <ul class="tabs clearfix">
                         <li><span class="active" data-aos="fade-up" data-aos-delay="100">Git</span></li>
+                        <li><span class="active" data-aos="fade-up" data-aos-delay="100">GitKraken</span></li>
                         <li><span class="active" data-aos="fade-up" data-aos-delay="150">Linux</span></li>
                         <li><span class="active" data-aos="fade-up" data-aos-delay="200">IntelliJ</span></li>
                         <li><span class="active" data-aos="fade-up" data-aos-delay="250">Webstorm</span></li>
@@ -812,7 +812,9 @@
                     <h2 data-aos="fade-in">APIs I may use</h2>
                     <ul class="tabs clearfix">
                         <li><span class="active" data-aos="fade-up" data-aos-delay="250">Spigot</span></li>
-                        <li><span class="active" data-aos="fade-up" data-aos-delay="200">Discord4J</span></li>
+                        <li><span class="active" data-aos="fade-up" data-aos-delay="200">discord.js</span></li>
+                        <li><span class="active" data-aos="fade-up" data-aos-delay="200">Mapbox</span></li>
+
                         <li><span class="active" data-aos="fade-up" data-aos-delay="150">p5.js</span></li>
                         <li><span class="active" data-aos="fade-up" data-aos-delay="100">LibGDX</span></li>
                     </ul>
@@ -909,7 +911,7 @@
     <!--Animate on Scroll-->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
     <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
-    <!--Instagram feed-->
+
 
 
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
@@ -917,7 +919,8 @@
         src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script crossorigin="anonymous" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
+    <!--Instagram feed-->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <script src="js/vendor/iziModal.min.js"></script>
     <script src="js/vendor/jquery.shuffle.min.js"></script>
