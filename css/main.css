@@ -227,7 +227,8 @@ h4::after {
     padding-top: 40vh;
     text-align: center;
 
-    background:linear-gradient(rgba(3, 3, 3, 0),#000000a6), url(../img/1st-section.jpg);
+    background: linear-gradient(rgba(3, 3, 3, 0), #000000a6), url(../img/1st-section.jpg);
+    background-size: cover;
 }
 
 .banner-content h1 {
