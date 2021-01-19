@@ -113,13 +113,10 @@ window.onload = () => {
     console.log("Loaded " + numGifs + " Gifs");
 
 
-    for (let i = 1; i <= $('.portfolio-content > .container > .row > div >  .portfolio-items > li').length; i++) {
-        //theme izimodals on startup
-        $('#popup-' + i).iziModal({headerColor: '#ff7d27', icon: 'fas fa-briefcase', background: 'rgb(36, 36, 19)'});
-
-
-    }
-
+    //theme izimodals on startup
+    $('.iziModal').each(function (index) {
+        $(this).iziModal({headerColor: '#ff7d27', icon: 'fas fa-briefcase', background: 'rgb(36, 36, 19)'})
+    })
 
     // read url params and jump to relevant portfolio card if present
 
