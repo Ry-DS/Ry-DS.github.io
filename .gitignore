@@ -11,7 +11,8 @@
 /build
 /captures
 .externalNativeBuild
-
+node_modules
 *.zip
 
 prepros-6\.config
+
