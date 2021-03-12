@@ -72,7 +72,7 @@ jQuery(document).ready(function ($) {
 AOS.init();
 //typed.js - intro page effect
 const typedOptions = {
-    strings: ["build websites", "make games", "take photos", "edit media", "make web-apps"],
+    strings: ["build websites", "make games", "take photos", "make videos", "love dogs!"],
     typeSpeed: 40,
     backSpeed: 40,
     startDelay: 1000,
