@@ -156,11 +156,6 @@
                     </a>
                 </li>
                 <li>
-                    <a data-group='sketches' href='#'>
-                        Sketches
-                    </a>
-                </li>
-                <li>
                     <a data-group='clients' href='#'>
                         Clients
                     </a>
@@ -174,7 +169,7 @@
                 <ul class='portfolio-items'>
                     <li data-groups='["clients"]'>
 
-                        <img src='img/logos/50raw.jpg' style="margin-top: 20%">
+                        <img class='tooltip-holder' src='img/logos/50raw.jpg' style="margin-top: 20%">
                         <div class="overlay" onclick="$('#popup-50raw').iziModal('open')">
                             <!-- Links -->
                             <a class="view-project" onclick="$('#popup-50raw').iziModal('open')">Learn more</a>
@@ -195,13 +190,21 @@
 
                                 <!--project popup description-->
                                 <div>
-
-                                    <p>50Raw is an education website aiming to revolutionise how high school students in
-                                        Victoria learn online, bringing beautiful, modern technology into the
-                                        industry.<br/><br/>
-                                        At this position I am the founding developer of 50raw's website and product,
-                                        building its entirety from the ground up.
+                                    <p>50 Raw is an e-learning startup, aiming to revolutionise how high school students
+                                        in Victoria learn online, bringing beautiful, modern technology into the
+                                        industry. It was founded and developed by 3 high-school students, including
+                                        myself.
                                     </p>
+                                    <p>We built 50Raw because we believed there is still so much potential for
+                                        technology to have in the education sector.
+                                        Unsatisfied by the current solutions we were given in our high-school years, we
+                                        wanted to create a new platform which leveraged the abilities of modern
+                                        technology - such as interactive animations and AI - to deliver a personalised
+                                        learning experience to our students,
+                                        helping them develop habits of lifelong learning.</p>
+                                    <p>While we currently accept students into our platform, we are still under rapid
+                                        development, and hope to integrate ourselves into the classroom, and help more
+                                        students reach their full potential.</p>
                                 </div>
                                 <div class="bottom-button-bar" style="grid-template-columns: 1fr 1fr;">
                                     <a href="https://50raw.com.au" target="_blank"><i class="fas fa-globe"></i>
@@ -220,7 +223,59 @@
                     </li>
                     <li data-groups='["clients"]'>
 
-                        <img class="tooltip-holder" src='img/logos/wuat.png' style="margin-top: 20%">
+                        <img src='img/logos/mlh-wfp.png' style="margin-top: 20%">
+                        <div class="overlay" onclick="$('#popup-mlh-wfp').iziModal('open')">
+                            <!-- Links -->
+                            <a class="view-project" onclick="$('#popup-mlh-wfp').iziModal('open')">Learn more</a>
+                        </div>
+                        <!--project popup-->
+                        <div class="iziModal" data-izimodal-group="portfolio" data-izimodal-title="MLH Fellowship & WFP"
+                             id='popup-mlh-wfp'>
+                            <figure>
+
+                                <!--project popup image-->
+                                <img alt class="modal-image" src='img/logos/mlh-wfp.png'>
+
+                            </figure>
+                            <div class='content'>
+
+                                <!--project popup title-->
+                                <h4>MLH Fellowship - WFP's PRISM</h4>
+
+                                <!--project popup description-->
+                                <div>
+
+                                    <p>The MLH Fellowship is a 3 month long program designed to help aspiring software
+                                        engineers get their career started by contributing
+                                        to large open-source projects such as React and Jest.</p>
+                                    <p>Out of over 20,000 applicants, I was selected to be part of the very first class,
+                                        consisting of 150 students.</p>
+                                    <p>Thanks to the Fellowship, I managed to grow my software engineering skills at a rapid
+                                        pace, learn from some incredibly skilled individuals, and make significant open source
+                                        contributions to The World Food Programme's PRISM, a mapping & analysis tool
+                                        used by decision makers to better decide where to focus their humanitarian
+                                        efforts.</p>
+                                </div>
+                                <div class="bottom-button-bar" style="grid-template-columns: 1fr 1fr 1fr;">
+                                    <a href="https://github.com/WFP-VAM/prism-frontend/pulls?q=author%3ARy-DS+" target="_blank"><i class="fab fa-github"></i>
+                                        View my Contributions</a>
+                                    <a href="https://www.linkedin.com/posts/ryan-d-samarakoon_opensource-remote-internship-activity-6704004841427087360-PVGo" target="_blank"><i class="fab fa-linkedin"></i>
+                                        Learn more about the Fellowship</a>
+                                    <a
+                                            href="https://innovation.wfp.org/project/prism"><i
+                                            class="fas fa-globe"></i> Learn more about PRISM</a>
+
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </li>
+                    <li data-groups='["websites"]'>
+
+                        <img src='img/logos/wuat.png' style="margin-top: 20%">
                         <div class="overlay" onclick="$('#popup-1').iziModal('open')">
                             <!-- Links -->
                             <a class="view-project" onclick="$('#popup-1').iziModal('open')">Learn more</a>
@@ -334,40 +389,6 @@
                     </li>
                     <li data-groups='["clients"]'>
 
-                        <img src='img/Old/clients/differentcraft.jpg' style="width: 100px">
-                        <div class="overlay" onclick="$('#popup-3').iziModal('open')">
-                            <a class="view-project" onclick="$('#popup-3').iziModal('open')">Learn More</a>
-                        </div>
-                        <div class="iziModal" data-izimodal-group="portfolio" data-izimodal-title="Different Craft"
-                             id='popup-3'>
-                            <figure>
-
-                                <img alt class="modal-image" src='img/Old/clients/differentcraft.jpg'>
-
-                            </figure>
-                            <div class='content'>
-
-                                <h4>Different Craft</h4>
-                                <p>
-                                    Different Craft was one of my first few clients who requested me to develop for
-                                    them
-                                    several custom 'enchantments' for their game server on top of a few fixer menus.
-
-                                </p>
-                                <div class="bottom-button-bar">
-                                    <a href="https://differentcraft.net/" style="grid-column: 1/3"><i
-                                            class="fas fa-globe"></i> Visit Client Page</a>
-                                </div>
-
-                            </div>
-
-                        </div>
-
-
-                    </li>
-
-                    <li data-groups='["clients"]'>
-
                         <img src='img/Old/clients/pokefind.png' style="width: 125px">
                         <div class="overlay" onclick="$('#popup-5').iziModal('open')">
                             <a class="view-project" onclick="$('#popup-5').iziModal('open')">Learn More</a>
@@ -452,96 +473,7 @@
                         </div>
 
                     </li>
-                    <li data-groups='["games"]'>
 
-                        <img class="gif-load" data-src="img/Old/gif/6.gif">
-                        <div class="overlay" onclick="$('#popup-7').iziModal('open')">
-                            <a class="view-project" onclick="$('#popup-7').iziModal('open')">Learn More</a>
-                        </div>
-                        <div class="iziModal" data-izimodal-group="portfolio" data-izimodal-title="Enfinity"
-                             id='popup-7'>
-                            <figure>
-
-                                <img alt class="modal-image gif-load" data-src='img/Old/gif/6.gif'>
-
-                            </figure>
-                            <div class='content'>
-
-                                <h4>Enfinity</h4>
-
-                                <p>
-                                    Enfinity was also another special project I undertook myself. It was the first
-                                    game
-                                    I attempted
-                                    to make in a 3D environment. While it hosted several challenges and headaches,
-                                    it
-                                    forecast several mathematical
-                                    concepts I was still to learn in my formal education such as Matrices and their
-                                    respective operations.
-                                    While it was quite hacky, it helped build the foundations of my
-                                    programming knowledge today.
-                                </p>
-                                <div class="bottom-button-bar">
-                                    <a href="https://github.com/BoxCubed/Enfinity" style="grid-column: 1/3"><i
-                                            class="fab fa-github"></i> Visit GitHub Page</a>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </li>
-                    <li data-groups='["websites"]'>
-
-                        <img class="gif-load" data-src='img/robot-website.gif'>
-                        <div class="overlay" onclick="$('#popup-8').iziModal('open')">
-                            <a class="view-project" onclick="$('#popup-8').iziModal('open')">Learn More</a>
-                        </div>
-                        <div class="iziModal" data-izimodal-group="portfolio"
-                             data-izimodal-title="Reliance on Technology Informative Website" id='popup-8'>
-                            <figure>
-
-                                <!--project popup image-->
-                                <img alt class="modal-image gif-load" data-src='img/robot-website.gif'>
-
-                            </figure>
-                            <div class='content'>
-
-                                <!--project popup title-->
-                                <h4>Reliance on Technology Informative Website</h4>
-
-                                <!--project popup description-->
-                                <div>
-                                    <p>
-                                        Web Development was quite new to me when I decided to go for a raw html
-                                        website
-                                        for my school project,
-                                        but I didn't let that fact stop me. While this wasn't my first website
-                                        project,
-                                        it had several new concepts I never grasped my head around prior
-                                        such as modals and bootstrap (I have been using w3, a much easier framework
-                                        for
-                                        building websites). While my teammates worked on styling, I
-                                        ensured to develop a color scheme and format that would both be appealing
-                                        and
-                                        easy to digest for the viewer. While I may change a few things
-                                        such as the margins or size of the text, I was proud of my ability to
-                                        improvise
-                                        for this project. As you can see, I've come a long way from this project.
-                                    </p>
-                                </div>
-                                <div class="bottom-button-bar">
-                                    <a href="http://ryan-s.me/Reliance-Technology-Info-Website/"><i
-                                            class="fas fa-globe"></i> Visit Page</a>
-                                    <a href="https://github.com/Ry-DS/Reliance-Technology-Info-Website"><i
-                                            class="fab fa-github"></i> Visit GitHub Page</a>
-                                </div>
-
-                            </div>
-
-                        </div>
-
-
-                    </li>
                     <li data-groups='["websites"]'>
 
                         <img class="gif-load" data-src='img/magnus.gif'>
@@ -593,7 +525,7 @@
 
 
                     </li>
-                    <li data-groups='["sketches"]'>
+                    <li data-groups='["games"]'>
 
                         <img class="gif-load" data-src='img/flappy-machine-learning.gif'>
                         <div class="overlay" onclick="$('#popup-10').iziModal('open')">
@@ -643,7 +575,7 @@
                         </div>
 
                     </li>
-                    <li data-groups='["sketches"]'>
+                    <li data-groups='["games"]'>
 
                         <img class="gif-load" data-src='img/particles.gif'>
                         <div class="overlay" onclick="$('#popup-11').iziModal('open')">
